@@ -1,11 +1,12 @@
 import style from "../css/Header.module.css";
 import Button from "./Button";
+import ResFoodDark from "../assets/ResFoodDark.png"
 
 export default function Header() {
   return (
     <div>
       <nav className={style.navbar}>
-        <img className={style.logotipo} src="" alt="Logo ResFood" />
+        <img className={style.logotipo} src={ResFoodDark} alt="Logo ResFood" />
         <p>Aberto de 18h - 00h</p>
         <ul className={style.listaItens}>
           <li>
