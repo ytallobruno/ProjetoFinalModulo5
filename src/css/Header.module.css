@@ -1,0 +1,42 @@
+@import "../App.css";
+
+.navbar {
+  background-color: var(--preto);
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar p {
+  color: var(--amarelo);
+  flex-grow: 2;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar,
+.listaItens,
+.listaItens li {
+  display: flex;
+}
+
+.listaItens {
+  color: white;
+  list-style: none;
+}
+
+.listaItens li {
+  align-items: center;
+  padding: calc(3vh - 18px);
+}
+
+.listaItens a {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--amarelo);
+}
