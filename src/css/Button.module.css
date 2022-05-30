@@ -1,0 +1,17 @@
+@import "../App.css";
+
+button {
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  color: var(--preto);
+  background-color: var(--amarelo);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  /* border: 1px solid rgb(75, 75, 75); */
+}
+
+button:hover {
+  color: white;
+  background-color: var(--vermelho);
+}
