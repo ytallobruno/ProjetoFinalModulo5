@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+img {
+  width: 150px;
+}
+
 .navbar p {
   color: var(--amarelo);
   flex-grow: 2;
