@@ -1,4 +1,4 @@
-import style from "../css/Button.module.css";
+import style from "./Button.module.css";
 
 export default function Button(props) {
   return (

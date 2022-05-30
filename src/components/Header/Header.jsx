@@ -1,6 +1,6 @@
-import style from "../css/Header.module.css";
-import Button from "./Button";
-import ResFoodDark from "../assets/ResFoodDark.png"
+import style from "./Header.module.css";
+import Button from "../Button/Button";
+import ResFoodDark from "../../assets/ResFoodDark.png"
 
 export default function Header() {
   return (
