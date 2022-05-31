@@ -1,4 +1,4 @@
-@import "../App.css";
+@import "../../App.css";
 
 .navbar {
   background-color: var(--preto);
@@ -8,7 +8,7 @@
 }
 
 img {
-  width: 150px;
+  width: calc(15vh - 10px);
 }
 
 .navbar p {
