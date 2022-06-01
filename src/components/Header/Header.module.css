@@ -1,5 +1,6 @@
 @import "../../App.css";
 
+
 .navbar {
   background-color: var(--preto);
   height: 10vh;
@@ -13,14 +14,16 @@ img {
 
 .navbar p {
   color: var(--amarelo);
-  flex-grow: 2;
+  flex-grow: 1;
   font-size: 14px;
   font-weight: 400;
+  padding-left: 2rem;
 }
 
 .navbar,
 .listaItens,
-.listaItens li {
+.listaItens li,
+.listaItens a {
   display: flex;
 }
 
@@ -31,7 +34,11 @@ img {
 
 .listaItens li {
   align-items: center;
-  padding: calc(3vh - 18px);
+  padding: 0.4rem;
+}
+
+.listaItens li:nth-child(6) {
+  margin-right: 0.5rem;
 }
 
 .listaItens a {
@@ -39,8 +46,18 @@ img {
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  align-items: center;
 }
 
 a:hover {
   color: var(--amarelo);
+}
+
+a img {
+  background-color: var(--amarelo);
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.3rem;
+  border-radius: 100%;
 }

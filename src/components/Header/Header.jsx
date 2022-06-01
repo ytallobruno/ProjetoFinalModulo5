@@ -1,6 +1,7 @@
 import style from "./Header.module.css";
 import Button from "../Button/Button";
-import ResFoodDark from "../../assets/ResFoodDark.png"
+import ResFoodDark from "../../assets/images/ResFoodDark.png";
+import Perfil from "../../assets/images/perfil.png";
 
 export default function Header() {
   return (
@@ -25,7 +26,10 @@ export default function Header() {
             <Button texto="CARRINHO" />
           </li>
           <li>
-            <a>Login</a>
+            <a>
+              <img src={Perfil} />
+              Login
+            </a>
           </li>
         </ul>
       </nav>
