@@ -10,8 +10,8 @@
 
 
 ## Descrição da aplicação:
-Esse projeto faz parte do Projeto Final do módulo 5 do curso de Dev. Web FullStack da [Resilia](https://www.resilia.com.br/).
-A aplicação desenvolvida em ReactJs e NodeJs foi construída para o website de um Restaurante que teve sua <a href="https://github.com/ytallobruno/projetoFinalModulo4/blob/main/README.md"> **REST API** </a> (clique para verificar documentação) criada no módulo 4.
+Esse projeto faz parte do Projeto Final do módulo 5 do curso WebDev FullStack da [Resilia](https://www.resilia.com.br/).<br>
+Nosso desafio foi desenvolver um site implmementando o que fomos aprendendo durante as aulas de React.JS, utilizando a <a href="https://github.com/ytallobruno/projetoFinalModulo4/blob/main/README.md"> **REST API** </a> (clique para verificar documentação) criada no módulo 4, além de react-router-dom, grid, loadings e afins para sua finalização.
 
 <br>
 
@@ -22,8 +22,9 @@ A aplicação desenvolvida em ReactJs e NodeJs foi construída para o website de
 <br>
 
 ## Ferramentas utilizadas:
+
 Utilizamos as seguintes ferramentas em nosso Site:
-- Jascript
+- Javascript
 - React (Vite)
 - React-Router-Dom
 - Deploy: Vercel
@@ -36,18 +37,13 @@ Utilizamos as seguintes ferramentas em nosso Site:
 >
 > In the project directory, you can run:
 >
-> ### `npm start`
+> ### `npm run dev`
 >
 > Runs the app in the development mode.\
 > Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 >
 > The page will reload when you make changes.\
 > You may also see any lint errors in the console.
->
-> ### `npm test`
-> 
-> Launches the test runner in the interactive watch mode.\
-> See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 >
 > ### `npm build`
 >
