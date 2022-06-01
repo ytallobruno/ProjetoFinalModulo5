@@ -1,0 +1,151 @@
+@import "../../App.css";
+
+.loader {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--preto);
+}
+
+.wineglass {
+  height: 46px;
+  position: relative;
+}
+
+.wineglass:after {
+  content: "";
+  position: absolute;
+  top: 47px;
+  left: 5px;
+  width: 20px;
+  height: 5px;
+  background: #fff;
+  box-shadow: 0 0 1px #fff;
+}
+
+.top {
+  background: #fff;
+  width: 30px;
+  height: 36px;
+  border-radius: 0 0 36px 36px;
+  box-shadow: 0 0 1px #fff;
+}
+
+.top:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  bottom: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(transparent 50%, #b9001f 50%);
+}
+
+.left .top:before {
+  animation: rotate2 2s linear infinite;
+}
+
+.right .top:before {
+  animation: rotate1 2s linear infinite;
+}
+
+.top:after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  width: 6px;
+  height: 13px;
+  background: #fff;
+  box-shadow: 0 0 1px #fff;
+}
+
+.left {
+  display: inline-block;
+  margin-right: 10px;
+  animation: rotate1 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
+}
+
+.right {
+  display: inline-block;
+  animation: rotate2 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(22deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-22deg);
+  }
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 35px;
+  position: relative;
+  opacity: 0;
+  animation: 2s fadeInUp infinite linear 0.2s;
+}
+
+.lista li {
+  width: 4px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  box-shadow: 0 0 5px var(--cinza);
+  transform-origin: bottom;
+}
+
+.lista li:nth-child(1) {
+  left: 26px;
+  bottom: 5px;
+  transform: rotate(-35deg);
+}
+
+.lista li:nth-child(2) {
+  left: 34px;
+  bottom: 8px;
+}
+
+.lista li:nth-child(3) {
+  left: 42px;
+  bottom: 5px;
+  transform: rotate(35deg);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: scaleY(1);
+  }
+
+  25% {
+    opacity: 0.8;
+    transform: scaleY(1.2);
+  }
+  50% {
+    opacity: 0.1;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0.3);
+  }
+}
