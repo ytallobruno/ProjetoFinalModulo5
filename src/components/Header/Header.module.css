@@ -2,7 +2,7 @@
 
 .navbar {
   background-color: var(--preto);
-  height: 10vh;
+  height: 12vh;
   justify-content: space-between;
   align-items: center;
 }
