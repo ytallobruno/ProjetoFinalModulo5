@@ -14,3 +14,7 @@
   --cinza: #EDEDED;
   --cinzaescuro: #464646;
 }
+
+body {
+  background-color: var(--preto);
+}
