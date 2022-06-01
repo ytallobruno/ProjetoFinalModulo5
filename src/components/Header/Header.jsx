@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./Header.module.css";
 import Button from "../Button/Button";
 import ResFoodDark from "../../assets/ResFoodDark.png"
@@ -22,7 +23,7 @@ export default function Header() {
             <Button texto="PEDIR" />
           </li>
           <li>
-            <Button texto="CARRINHO" />
+            <Link to="/carrinho"><Button texto="CARRINHO" /></Link>
           </li>
           <li>
             <a>Login</a>
