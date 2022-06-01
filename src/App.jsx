@@ -1,15 +1,22 @@
+import { BrowserRouter, Outlet, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Header from "./components/Header/Header"
-import Main from './components/Main/Main'
-import { Link, Outlet } from 'react-router-dom'
+import Main from './pages/Main/Main'
+import Carrinho from './components/Carrinho/Carrinho'
+
 
 function App() {
 
   return (
     <div className="App">
-        <Header/>
-        <Main />
-        <Outlet />
+    <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Main />}>
+              <Route path='/carrinho' element={<Carrinho />} />
+            </Route>
+            
+          </Routes>
+    </BrowserRouter>
+  
     </div>
   )
 }
