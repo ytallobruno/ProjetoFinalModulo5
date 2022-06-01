@@ -7,11 +7,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  flex-shrink: 2 ;
 }
 
-img {
-  width: calc(15vh - 10px);
+.logotipo {
+  margin-left: 0.5rem;
+  width: calc(15vh - 20px);
 }
 
 .navbar p {
