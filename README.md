@@ -1,8 +1,8 @@
-# Projeto Final Módulo 5 - ResFood 🍕
+# Projeto Final Módulo 5 - Resili Cucina 🍕
 
 <div id="inicio" align=center>
   <a href="#andamento">Andamento</a>&nbsp;&nbsp;
-  <a href="#api">API Utilizada</a>&nbsp;&nbsp;
+  <a href="#ferramentas">Ferramentas Utilizadas</a>&nbsp;&nbsp;
   <a href="#react">REACT</a>&nbsp;&nbsp;
   <a href="#contribuir">Como contribuir</a>&nbsp;&nbsp;
   <a href="#grupo">Autores</a> 
@@ -21,7 +21,7 @@ Nosso desafio foi desenvolver um site implmementando o que fomos aprendendo dura
 
 <br>
 
-## Ferramentas utilizadas:
+<h2 id="ferramentas"> Ferramentas utilizadas 🛠️</h2>
 
 Utilizamos as seguintes ferramentas em nosso Site:
 - Javascript
