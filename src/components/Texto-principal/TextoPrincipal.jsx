@@ -1,4 +1,4 @@
-import style from "./Main.module.css"
+import style from "./TextoPrincipal.module.css"
 import Button from '../Button/Button'
 import { useState } from "react"
 

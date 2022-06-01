@@ -24,7 +24,7 @@ export default function Header() {
             <Button texto="PEDIR" />
           </li>
           <li>
-            <Link to="/carrinho"><Button texto="CARRINHO" /></Link>
+            <Link to="/carrinho" style={{textDecoration: 'none'}}><Button texto="CARRINHO" /></Link>
           </li>
           <li>
             <a>
