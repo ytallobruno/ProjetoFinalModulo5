@@ -1,3 +1,12 @@
+@keyframes carrinho-move {
+    0%   {top: 500px;}
+    25%  {top: 300px;}
+    50%  {top: 100px;}
+    75%  {top: 50px;}
+    100% {top: 0px;}
+}
+
+
 .carrinho{
     display: flex;
     flex-direction: column;
@@ -9,11 +18,11 @@
     width: 35vw;
     color: white;
     position: absolute;
-    top: 500px;
+    top: 0;
     right: 0;
     border: 2px rgba(255, 255, 255, 0.466) solid;
-    transition: width 2s, height 2s, transform 1.2s;
-    transform: translateY(-500px);
+    transition: height 2s, animation 1.2s;
+    animation: carrinho-move 0.2s;
 }
 
 
