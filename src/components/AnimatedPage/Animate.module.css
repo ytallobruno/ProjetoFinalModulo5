@@ -1,0 +1,10 @@
+.animate{
+    margin-top: 190px;
+}
+
+
+@media screen and (max-width: 900px){ 
+    .animate{
+        margin-top: 0px;
+    }
+}

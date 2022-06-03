@@ -35,6 +35,11 @@
     width: 70%;
     margin: 25px -22px;
     display: flex;
+
+}
+
+.buttonDiv * {
+    border: solid 2px rgba(255, 255, 255, 0.582);
 }
 
 .buttonDiv :nth-child(1){
@@ -68,6 +73,7 @@
     .buttonDiv *{
         height: 40px;
         font-size: 12px;
+        border: solid 2px rgba(255, 255, 255, 0.582);
     }
 
     .mainText p{
