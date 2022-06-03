@@ -1,4 +1,4 @@
-import Header from '../Header/Header'
+import NavBar from "../NavBar/NavBar"
 import style from './Cardapio.module.css'
 import Logo from '../../assets/images/ResiliCucina.png'
 import Nhoque from '../../assets/images/nhoque.jpg'
@@ -28,7 +28,7 @@ export default function Cardapio() {
 
   return (
     <div className={style.cardapio}>
-        <Header />
+        <NavBar />
         <div>
           <div className={style.logo}>
             <img src={Logo} alt='logo do restaurante' />
