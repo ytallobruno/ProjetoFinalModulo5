@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Resili from "../../assets/images/ResiliCucina.png";
 import Perfil from "../../assets/images/perfil.png";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div>
       <nav className={style.navbar}>
@@ -21,7 +21,7 @@ export default function Header() {
             <a>Bebidas</a>
           </li>
           <li>
-            <Button texto="PEDIR" />
+            <Link to="/cardapio" style={{textDecoration: 'none'}}><Button texto="PEDIR" /></Link>
           </li>
           <li>
             <Link to="/carrinho" style={{textDecoration: 'none'}}><Button texto="CARRINHO" /></Link>
