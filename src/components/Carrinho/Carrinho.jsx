@@ -1,12 +1,12 @@
 import style from './Carrinho.module.css'
 import { Link } from 'react-router-dom'
-import AnimatedPage from '../AnimatedPage/AnimatedPage'
-
+import { useState } from 'react'
 
 export default function Carrinho (props) {
 
+    const[showCart, setShowcart] = useState(true)
+
     return (
-        <AnimatedPage>
         <div>
             <div className={style.carrinho}>
                 <div className={style.title}>
@@ -18,7 +18,6 @@ export default function Carrinho (props) {
                 <p> Total: </p>
             </div>
         </div>
-        </AnimatedPage>
 
     )
 
