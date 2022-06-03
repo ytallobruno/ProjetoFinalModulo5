@@ -9,10 +9,13 @@
     width: 35vw;
     color: white;
     position: absolute;
-    top: 50;
+    top: 500px;
     right: 0;
     border: 2px rgba(255, 255, 255, 0.466) solid;
+    transition: width 2s, height 2s, transform 1.2s;
+    transform: translateY(-500px);
 }
+
 
 .title{
     display: flex;
