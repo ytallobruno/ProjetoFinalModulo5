@@ -8,12 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^6.3.10",
     "axios": "^0.27.2",
+    "framer-motion": "^6.3.10",
+    "gensync": "^1.0.0-beta.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "to-fast-properties": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
