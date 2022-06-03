@@ -1,9 +1,12 @@
 import style from './Carrinho.module.css'
 import { Link } from 'react-router-dom'
+import AnimatedPage from '../AnimatedPage/AnimatedPage'
 
-export default function Carrinho () {
+
+export default function Carrinho (props) {
 
     return (
+        <AnimatedPage>
         <div>
             <div className={style.carrinho}>
                 <div className={style.title}>
@@ -15,6 +18,7 @@ export default function Carrinho () {
                 <p> Total: </p>
             </div>
         </div>
+        </AnimatedPage>
 
     )
 

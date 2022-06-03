@@ -13,6 +13,8 @@ function App() {
     }, 3500);
   });
 
+ 
+
   return (
     <div className="App">
       {isLoading == true ? (
