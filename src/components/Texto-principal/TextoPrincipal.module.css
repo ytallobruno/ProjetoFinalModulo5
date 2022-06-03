@@ -1,193 +1,199 @@
 @import "../../App.css";
 
-.main{
-    width: 100%;
-    height: 66  vh;
-    background-color: var(--preto);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.main {
+  width: 100%;
+  height: 66 vh;
+  background-color: var(--preto);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.mainText{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 3%
+.mainText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 3%;
 }
 
-.mainText p{
-    font-size: clamp(0.75em, 0.5em + 2vw, 2.5em);
-    color: white;
-    font-weight: 650;
-    line-height: 60px;
+.mainText p {
+  font-size: clamp(0.75em, 0.5em + 2vw, 2.5em);
+  color: white;
+  font-weight: 650;
+  line-height: 60px;
 }
 
-.comidaItaliana{
-    letter-spacing: 5px;
+.comidaItaliana {
+  letter-spacing: 5px;
 }
 
-
-.mainText :nth-child(3){
-    letter-spacing: 3px;
-    text-decoration: underline;
+.mainText :nth-child(3) {
+  letter-spacing: 3px;
+  text-decoration: underline;
 }
 
-.buttonDiv{
-    width: 100%;
-    letter-spacing: 0px ;
-    width: 70%;
-    margin: 25px -22px;
-    display: flex;
-
+.buttonDiv {
+  width: 100%;
+  letter-spacing: 0px;
+  width: 70%;
+  margin: 25px -22px;
+  display: flex;
 }
 
 .buttonDiv * {
-    width: 150px;
-    min-width: 120px;
-    height: 40px;
-    font-size: 12px;
-    border: solid 2px rgba(255, 255, 255, 0.582);
+  width: 150px;
+  min-width: 120px;
+  height: 40px;
+  font-size: 12px;
+  border: solid 2px var(--cinzamedio);
 }
 
-.buttonDiv :nth-child(1){
-    margin: 0 15px
+.buttonDiv :nth-child(1) {
+  margin: 0 15px;
 }
 
-.videoDiv{
-    margin-right: 50px;
-    object-fit: cover;
-    max-height: fit-content;
+.videoDiv {
+  margin-right: 50px;
+  object-fit: cover;
+  max-height: fit-content;
 }
 
-.videoContainer{
-    max-width: 100%;
+.videoContainer {
+  max-width: 100%;
 }
 
-.motoboy{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    max-width: 100%;
+.motoboy {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  max-width: 100%;
 }
 
-.motoboyImagem{
-    display: flex;
-    width: 50%;
-    object-fit: cover;
+.motoboyImagem {
+  display: flex;
+  width: 50%;
+  object-fit: cover;
 }
 
-.motoboyImagem img{
-    width: fit-content;
-    max-width: 50%;
-    margin: 0 auto;
+.motoboyImagem img {
+  width: fit-content;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
-.motoboyImagem img{
-    min-width: 300px;
+.motoboyImagem img {
+  min-width: 300px;
 }
 
-.motoboyTexto{
-    justify-content: center;
-    width: 60%;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+.motoboyTexto {
+  justify-content: center;
+  width: 60%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.motoboyTexto h1, h2{
-    font-size: clamp(1.75em, 0.5em + 2vw, 2.5em);
-    letter-spacing: 2px;
-    padding: 0 0 10px 0;
+.motoboyTexto h1,
+h2 {
+  font-size: clamp(1.75em, 0.5em + 2vw, 2.5em);
+  letter-spacing: 2px;
+  padding: 0 0 10px 0;
 }
 
-.motoboyTexto h2{
-    font-size: clamp(9px, 0.5em + 0.9vw, 1.5em)
+.motoboyTexto h2 {
+  font-size: clamp(9px, 0.5em + 0.9vw, 1.5em);
 }
 
 .motoboyTexto ul {
-    font-size: 10px;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
+  font-size: 10px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.motoboyTexto ul li{
-    cursor: pointer;
-    list-style: none;
+.motoboyTexto ul li {
+  cursor: pointer;
+  list-style: none;
 }
 
-@media (max-width: 700px){
-    .main{
-       flex-direction: column;
-       justify-content: flex-start;
-       height: 100%;
-    }
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 2.5rem;
+  }
 
-    .mainText{
-        width: 100%;
-    }
+  .mainText {
+    width: 100%;
+  }
 
-    .buttonDiv{
-        margin: 20px auto;
-        justify-content: space-evenly;
-    }
+  .buttonDiv {
+    margin: 20px auto;
+    justify-content: space-evenly;
+  }
 
-    .buttonDiv *{
-        height: 40px;
-        font-size: 11px;
-        border: solid 2px rgba(255, 255, 255, 0.582);
-    }
+  .buttonDiv * {
+    height: 40px;
+    font-size: 11px;
+    border: solid 2px rgba(255, 255, 255, 0.582);
+  }
 
-    .mainText p{
-        font-size: 23px;
-        font-weight: 650;
-        line-height: 50px;
-        text-align: center;
-    }
-    
-    .videoDiv{
-        max-width: 30%;
-        max-height: 50px;
-    }
+  .mainText p {
+    font-size: 23px;
+    font-weight: 650;
+    line-height: 50px;
+    text-align: start;
+  }
 
-    .motoboy{
-        flex-direction: column-reverse;
-        justify-content: center;
-        width: 100%;
+  .videoDiv {
+    max-width: 30%;
+    max-height: 50px;
+  }
 
-    }
+  .motoboy {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .motoboyImagem{
-        width: 100%;
-        margin: 0 auto;
-    }
+  .motoboyImagem {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    .motoboyImagem img{
+  .motoboyImagem img {
+  }
 
-    }
+  .motoboyTexto {
+    padding: 30px 0 0;
+    width: 100%;
+  }
 
-    .motoboyTexto {
-        padding: 30px 0 0;
-        width: 100%;
-    }
+  .motoboyTexto h1 {
+    width: 100%;
+    font-size: 25px;
+  }
 
-    .motoboyTexto h1{
-        width: 100%;
-        font-size: 25px;
-    }
+  .motoboyTexto h2 {
+    font-size: 18px;
+  }
 
-    .motoboyTexto h2{
-        font-size: 18px;
-    }
+  .motoboyTexto ul {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
 
-    .motoboyTexto ul {
-        padding: 10px 0;
-        font-size: 16px;
-    }
+@media (max-width: 900px) {
+  .main {
+    padding-top: 5rem;
+  }
 
-
+  .mainText p {
+    line-height: 45px;
+  }
 }
