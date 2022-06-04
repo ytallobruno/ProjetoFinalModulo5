@@ -1,5 +1,5 @@
 import { BrowserRouter, Outlet, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./pages/Main/Main";
 import Carrinho from "./components/Carrinho/Carrinho";
@@ -14,8 +14,6 @@ function App() {
       setIsLoading(false);
     }, 3500);
   });
-
- 
 
   return (
     <div className="App">

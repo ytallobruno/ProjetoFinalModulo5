@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import styles from "./Footer.module.css";
+import SobreNos from "./components/Modal/SobreNos";
+import SejaCucina from "./components/Modal/SejaCucina";
+import Contato from "./components/Modal/Contato";
 
 export default function Footer () {
   return (
@@ -16,13 +20,19 @@ export default function Footer () {
                 <FaLinkedin />
             </li>
             <li>
-                Sobre nós
+                <span onClick={<SobreNos/>}>
+                    Sobre nós
+                </span>               
             </li>
             <li>
-                Trabalhe conosco
+                <span onClick={<SejaCucina/>}>
+                    Seja Cucina
+                </span>
             </li>
             <li>
-                Contato
+                <span onClick={<Contato/>}>
+                    Contato
+                </span>                
             </li>
           </ul>
           <p className={styles.copy_right}>
