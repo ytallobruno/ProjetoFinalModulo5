@@ -1,9 +1,10 @@
 import { BrowserRouter, Outlet, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./pages/Main/Main";
 import Carrinho from "./components/Carrinho/Carrinho";
 import Loader from "./components/Loader/Loader";
+import Footer from "./components/Footer/Footer";
 import Cardapio from "./components/Cardapio/Cardapio";
 
 function App() {
@@ -13,8 +14,6 @@ function App() {
       setIsLoading(false);
     }, 3500);
   });
-
- 
 
   return (
     <div className="App">
@@ -28,7 +27,9 @@ function App() {
             </Route>
             <Route path="/cardapio" element={<Cardapio />}/>
           </Routes>
+          <Footer />
         </BrowserRouter>
+        
       )}
     </div>
   );
