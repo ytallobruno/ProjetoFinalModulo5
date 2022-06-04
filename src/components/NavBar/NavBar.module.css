@@ -1,0 +1,152 @@
+@import "../../App.css";
+
+.navigation {
+  background-color: var(--cinzaescuro);
+  height: 10vh;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 0 0 1rem;
+}
+
+a:visited {
+  color: var(--cinza);
+}
+
+.navigation,
+.brand,
+.listaItens :is(a, li) {
+  align-items: center;
+}
+
+.logotipo {
+  margin-left: 0.5rem;
+  width: calc(15vh - 45px);
+}
+
+.navigation p {
+  color: var(--amarelo);
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 2rem;
+}
+
+.navigation,
+.brand,
+.listaItens,
+.listaItens :is(a, li) {
+  display: flex;
+}
+
+.listaItens {
+  color: var(--cinza);
+  list-style: none;
+}
+
+.listaItens li {
+  padding: 0.4rem;
+}
+
+.listaItens li:nth-child(6) {
+  margin-right: 0.6rem;
+}
+
+.listaItens a {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.listaItens li:hover,
+.listaItens li:hover .loginIcone {
+  color: var(--amarelo);
+}
+
+.loginIcone {
+  background-color: var(--preto);
+  color: var(--cinza);
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.3rem;
+  border-radius: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .NavBar .navigation,
+  .listaItens li:nth-child(4),
+  .listaItens li:nth-child(5) {
+    display: none;
+  }
+
+  .NavBar .MobileNavigation {
+    width: 100%;
+    position: fixed;
+    height: 8.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinzaescuro);
+    margin: 0 0 1rem;
+  }
+
+  .NavBar .MobileNavigation .Hamburguer,
+  .NavBar .MobileNavigation .carrinho {
+    color: var(--cinza);
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .NavBar .MobileNavigation .Hamburguer {
+    left: 5%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .NavBar .MobileNavigation .carrinho {
+    right: 5%;
+    width: 30px;
+    height: 30px;
+  }
+
+  .logotipo {
+    align-items: center;
+    width: calc(5rem - 20px);
+    height: 90%;
+    padding: 0.4rem;
+  }
+
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    background-color: var(--cinzaescuro);
+    border-top: 2px solid var(--amarelo);
+  }
+
+  .listaItens:last-child {
+    padding-bottom: 0.5rem;
+  }
+
+  .NavBar nav ul li {
+    padding-left: 7%;
+  }
+
+  .NavBar {
+    opacity: 1;
+  }
+
+  .loginIcone {
+    display: none;
+  }
+}

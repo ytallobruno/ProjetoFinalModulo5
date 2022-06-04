@@ -1,7 +1,10 @@
 import style from './Carrinho.module.css'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
-export default function Carrinho () {
+export default function Carrinho (props) {
+
+    const[showCart, setShowcart] = useState(true)
 
     return (
         <div>

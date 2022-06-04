@@ -1,3 +1,12 @@
+@keyframes carrinho-move {
+    0%   {top: 500px;}
+    25%  {top: 300px;}
+    50%  {top: 100px;}
+    75%  {top: 50px;}
+    100% {top: 0px;}
+}
+
+
 .carrinho{
     display: flex;
     flex-direction: column;
@@ -5,15 +14,17 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(6px);
-    height: 82vh;
+    height: 100vh;
     width: 35vw;
     color: white;
     position: absolute;
     top: 0;
     right: 0;
-    border-top: 2px rgba(255, 255, 255, 0.466) solid;
-    border-left: 2px rgba(255, 255, 255, 0.466) solid;
+    border: 2px rgba(255, 255, 255, 0.466) solid;
+    transition: height 2s, animation 1.2s;
+    animation: carrinho-move 0.2s;
 }
+
 
 .title{
     display: flex;
@@ -24,12 +35,34 @@
 
 .title h2{
     position: absolute;
-    top: 15px
+    top: 55px
+    
 }
 
 .title p{
     position: absolute;
-    top: 0;
-    right: 5px;
+    top: 5px;
+    right: 15px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 900px){
+
+    .carrinho{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.849);
+        border: 2 px solid white;
+    }
+
+    .title p{
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        font-weight: 700;
+    }
+
+
+
+
 }
