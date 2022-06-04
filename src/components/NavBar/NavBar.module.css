@@ -139,10 +139,14 @@ a:visited {
   }
 
   .NavBar nav ul li {
-    padding-left: 10%;
+    padding-left: 7%;
   }
 
   .NavBar {
     opacity: 1;
+  }
+
+  .loginIcone {
+    display: none;
   }
 }
