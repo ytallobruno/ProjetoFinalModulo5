@@ -6,6 +6,7 @@ import Carrinho from "./components/Carrinho/Carrinho";
 import Loader from "./components/Loader/Loader";
 import Footer from "./components/Footer/Footer";
 import Cardapio from "./components/Cardapio/Cardapio";
+import Pagina404 from './Pages/Pagina404/Pagina404';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,10 +23,10 @@ function App() {
       ) : (
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Main />}>
-              <Route path="/carrinho" element={<Carrinho />} />
-            </Route>
+            <Route path='/' element={<Main />}/>
+            <Route path='/carrinho' element={<Carrinho />} />
             <Route path="/cardapio" element={<Cardapio />}/>
+            <Route path='*' element={<Pagina404/>} />
           </Routes>
           <Footer />
         </BrowserRouter>

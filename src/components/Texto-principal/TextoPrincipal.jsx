@@ -3,7 +3,7 @@ import style from "./TextoPrincipal.module.css"
 import Button from '../Button/Button'
 import { useState } from "react"
 
-export default function Main () {
+export default function TextoPrincipal () {
 
     const [bgColor, setBgColor] = useState('black')
     const [txtColor, setTxtColor] = useState('white')
