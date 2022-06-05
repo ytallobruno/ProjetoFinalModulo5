@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
-import React from "react";
+import React, {useState} from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import styles from "./Footer.module.css";
-import SobreNos from "./components/Modal/SobreNos";
-import SejaCucina from "./components/Modal/SejaCucina";
-import Contato from "./components/Modal/Contato";
+import SobreNos from "../Modal/SobreNos";
+import SejaCucina from "../Modal/SejaCucina";
+import Contato from "../Modal/Contato";
 
 export default function Footer () {
+    const [isSobreVisible, setIsSobreVisible] = useState (false);
+    const [isSejaVisible, setIsSejaVisible] = useState (false);
+    const [isContatoVisible, setIsContatoVisible] = useState (false);
   return (
       <footer className={styles.footer}>
           <ul className={styles.social_list}>
@@ -19,22 +21,23 @@ export default function Footer () {
             <li>
                 <FaLinkedin />
             </li>
-            <li>
-                <span onClick={<SobreNos/>}>
-                    Sobre nós
-                </span>               
-            </li>
-            <li>
-                <span onClick={<SejaCucina/>}>
-                    Seja Cucina
-                </span>
-            </li>
-            <li>
-                <span onClick={<Contato/>}>
-                    Contato
-                </span>                
-            </li>
-          </ul>
+            <li onClick={()=>{setIsSobreVisible(true)}}> Sobre Nós </li>
+            {isSobreVisible ? (
+                <SobreNos onClose={()=> setIsSobreVisible(false)}/>
+                  ) : null}
+            <li onClick={()=>{setIsSejaVisible(true)}}> Seja Cucina </li>
+            {isSejaVisible ? (
+                <SejaCucina onClose={()=> setIsSejaVisible(false)}>
+                    <SejaCucina/>
+                </SejaCucina>
+                ) : null}
+            <li onClick={()=>{setIsContatoVisible(true)}}> Contato </li>
+            {isContatoVisible ? (
+                <Contato onClose={()=> setIsContatoVisible(false)}>
+                    <Contato/>
+                </Contato>
+                ) : null}
+        </ul>
           <p className={styles.copy_right}>
               <span>ResiliCucina</span> &copy; 2022
           </p>

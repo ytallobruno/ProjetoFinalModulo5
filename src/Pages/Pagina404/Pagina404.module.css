@@ -2,17 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
+
 
 .img {
-    width: 150px;
-    height: 150px;
-
-}
+    width: 400px;
+    height: 400px;
+    }
 
 .txt {
+    text-align: center;
     font-size: 20px;
-    color: #090909; 
+    color: #E32B2B;; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    }
