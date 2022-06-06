@@ -16,7 +16,6 @@ export default function Cardapio() {
   let [counter, setCounter] = useState(0)
   const cardapioFiltrado = cardapio.filter(el => el.nome.toLowerCase().includes(filtro.toLowerCase()))
 
-
   function adicionaItem (){
     span === false ? setSpan(true) : ''
     setCounter(counter+=1)
@@ -45,7 +44,7 @@ export default function Cardapio() {
 
             <div className={style.cardapioDiv}>
             {cardapioFiltrado.map((element, index)=> 
-                        <div className={style.card}>
+                        <div key={element.id} className={style.card}>
                         <div className={style.cardImage}>
                           <img src={element.img} alt='foto do prato' />
                         </div>

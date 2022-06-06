@@ -13,8 +13,7 @@ export default function NavLinks(props) {
   const animateTo = { opacity: 1, y: 0 };
 
   const[showCart, setShowcart] = useState(false)
-
-
+  
   return (
     <ul className={style.listaItens}>
       <motion.li
