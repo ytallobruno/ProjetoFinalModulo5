@@ -49,7 +49,7 @@
 }
 
 .buttonDiv button {
-  border: solid 2px var(--cinzamedio);
+  border: solid 2px var(--amarelo);
 }
 
 .buttonDiv :nth-child(1) {
