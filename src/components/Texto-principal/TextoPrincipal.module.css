@@ -46,6 +46,9 @@
   min-width: 120px;
   height: 40px;
   font-size: 12px;
+}
+
+.buttonDiv button {
   border: solid 2px var(--cinzamedio);
 }
 
