@@ -7,11 +7,12 @@ export default function Navigation() {
   return (
     <nav className={style.navigation}>
       <div className={style.brand}>
-        <Link to="/"><img className={style.logotipo} src={Resili} alt="Logo ResFood" /></Link>
+        <Link to="/">
+          <img className={style.logotipo} src={Resili} alt="Logo ResFood" />
+        </Link>
         <p>Aberto de 18h - 00h</p>
       </div>
       <NavLinks />
-
     </nav>
   );
 }

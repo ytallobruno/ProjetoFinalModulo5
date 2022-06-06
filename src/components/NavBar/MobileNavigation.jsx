@@ -9,7 +9,7 @@ import Carrinho from "../Carrinho/Carrinho";
 
 export default function MobileNavigation() {
   const [open, setOpen] = useState(false);
-  const[showCart, setShowcart] = useState(false);
+  const [showCart, setShowcart] = useState(false);
   const hamburguerIcon = (
     <CgMenuRound className={style.Hamburguer} onClick={() => setOpen(!open)} />
   );
@@ -20,16 +20,18 @@ export default function MobileNavigation() {
 
   return (
     <div>
-    <nav className={style.MobileNavigation}>
-        <BsHandbag className={style.carrinho} onClick={(e) => setShowcart(true)} />
-      <Link to="/"><img className={style.logotipo} src={Resili} alt="Logo ResFood" /></Link>
-      {open ? closeIcon : hamburguerIcon}
-      {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
-    </nav>
-    <Carrinho
-      showCart={showCart}
-      closeCart={(e) => setShowcart(false)}
-      />
+      <nav className={style.MobileNavigation}>
+        <BsHandbag
+          className={style.carrinho}
+          onClick={(e) => setShowcart(true)}
+        />
+        <Link to="/">
+          <img className={style.logotipo} src={Resili} alt="Logo ResFood" />
+        </Link>
+        {open ? closeIcon : hamburguerIcon}
+        {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+      </nav>
+      <Carrinho showCart={showCart} closeCart={(e) => setShowcart(false)} />
     </div>
   );
 }
