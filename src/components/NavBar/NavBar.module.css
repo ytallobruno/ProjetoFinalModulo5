@@ -57,8 +57,10 @@ a:visited {
   font-weight: 500;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
+.listaItens li a:hover,
 .listaItens li:hover,
 .listaItens li:hover .loginIcone {
   color: var(--amarelo);
