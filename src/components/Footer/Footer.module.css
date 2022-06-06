@@ -1,14 +1,17 @@
 @import "../../App.css";
 
 .footer {
+  margin-top: 30px;
   background-color: #090909;
   color: #F7CC32;
   padding: 2em;
   text-align: center;
+  max-width: 100%;
 }
 
 .social_list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   list-style: none;

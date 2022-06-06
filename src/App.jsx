@@ -28,7 +28,6 @@ function App() {
             <Route path="/cardapio" element={<Cardapio />}/>
             <Route path='*' element={<Pagina404/>} />
           </Routes>
-          <Footer />
         </BrowserRouter>
         
       )}

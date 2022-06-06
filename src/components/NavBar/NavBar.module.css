@@ -19,6 +19,7 @@ a:visited {
 }
 
 .logotipo {
+  cursor: pointer;
   margin-left: 0.5rem;
   width: calc(15vh - 45px);
 }

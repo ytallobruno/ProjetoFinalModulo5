@@ -2,6 +2,8 @@ import motoboy from '../../assets/images/motoboy.png'
 import style from "./TextoPrincipal.module.css"
 import Button from '../Button/Button'
 import { useState } from "react"
+import { Link } from 'react-router-dom'
+import Footer from '../Footer/Footer'
 
 export default function TextoPrincipal () {
 
@@ -22,13 +24,18 @@ export default function TextoPrincipal () {
                     <p> (de verdade) </p>
                     <p> na porta da sua casa </p>
                     <div className={style.buttonDiv}>
-                        <Button
-                        texto='Cardápio'/>
+
+                        <Link to='/cardapio' style={{border: 'none'}}>
+                            <Button
+                            texto='Cardápio'/>
+                        </Link>
+
                         <Button
                         changeBg = {alteraBg}
                         textColor = {txtColor}
                         texto='Peça aqui' bgColor={bgColor}
                         />
+
                     </div>
                 </div>
 
@@ -53,6 +60,7 @@ export default function TextoPrincipal () {
             </ul>
         </div>
     </div>
+    <Footer />
 </div>
     )
 }
