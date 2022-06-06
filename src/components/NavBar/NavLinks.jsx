@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { BsPersonCircle } from "react-icons/bs";
 import style from "./NavBar.module.css";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
+import Carrinho from '../Carrinho/Carrinho'
+
+
 
 export default function NavLinks(props) {
   const animateFrom = { opacity: 0, y: -30 };
   const animateTo = { opacity: 1, y: 0 };
+
+  const[showCart, setShowcart] = useState(false)
+
 
   return (
     <ul className={style.listaItens}>
@@ -48,9 +55,7 @@ export default function NavLinks(props) {
         transition={{ delay: 0.4 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Link to="/carrinho" style={{ textDecoration: "none" }}>
-          <Button texto="CARRINHO"/>
-        </Link>
+      <Button onClick={(e) => setShowcart(true)} texto="CARRINHO"/>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -62,7 +67,12 @@ export default function NavLinks(props) {
           <BsPersonCircle className={style.loginIcone} />
           Login
         </a>
+
       </motion.li>
+      <Carrinho
+      showCart={showCart}
+      closeCart={(e) => setShowcart(false)}
+      />
     </ul>
   );
 }

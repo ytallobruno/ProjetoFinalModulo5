@@ -1,23 +1,27 @@
 import style from './Carrinho.module.css'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Carrinho (props) {
 
-    const[showCart, setShowcart] = useState(true)
+    function mostraCarrinho (ev){
+        setShowcart(!showCart)
+    }
+
+
 
     return (
         <div>
-            <div className={style.carrinho}>
+            <div className={props.showCart ? style.carrinho : style.carrinhoClosed}>
                 <div className={style.title}>
-                    <h2>Seus produtos:</h2>
-                    <Link to="/" style={{color: 'white'}}><p> &#66338; </p></Link>
+                    <h2>Seus produtos</h2>
+                    <p onClick={props.closeCart}> &#66338; </p>
                 </div>
-                <p>Produtos: </p>
-                <p>Preço: </p>
-                <p> Total: </p>
+                <div className={style.produtos}></div>
+                    <p>Produtos: </p>
+                    <p> Total: </p>
+                </div>
             </div>
-        </div>
 
     )
 

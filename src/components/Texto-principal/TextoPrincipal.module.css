@@ -127,11 +127,26 @@ h2 {
     padding-top: 2.5rem;
   }
 
-  .mainText {
+  .mainText{
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .mainText p{
+    display: inline-block;
+  }
+
+  .mainText :nth-child(2){
+    width: 60%;
   }
 
   .buttonDiv {
+    display: flex;
     margin: 20px auto;
     justify-content: space-evenly;
   }
@@ -146,7 +161,7 @@ h2 {
     font-size: 23px;
     font-weight: 650;
     line-height: 50px;
-    text-align: start;
+    text-align:justify
   }
 
   .videoDiv {
@@ -163,9 +178,6 @@ h2 {
   .motoboyImagem {
     width: 100%;
     margin: 0 auto;
-  }
-
-  .motoboyImagem img {
   }
 
   .motoboyTexto {
@@ -191,9 +203,5 @@ h2 {
 @media (max-width: 900px) {
   .main {
     padding-top: 5rem;
-  }
-
-  .mainText p {
-    line-height: 45px;
   }
 }
