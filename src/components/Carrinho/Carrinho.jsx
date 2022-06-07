@@ -32,7 +32,8 @@ export default function Carrinho(props) {
                     </div>
                     <div className={style.produtos}></div>
                     <ul>
-                        {produtos.length > 0 ? produtos.map((produto, index) => <div key={index} className={style.listaProdutos}><li>{produto.nome} - {produto.preco} </li> <p onClick={(e) => removeItem(index) } className={style.remove}>&#66338;</p></div>) : <p> Seu carrinho está vazio. <br></br> Adicione um produto. </p>}
+                        {produtos.length > 0 ? produtos.map((produto, index) => <div key={index} className={style.listaProdutos}><li>{produto.nome} - {produto.preco} </li> <p onClick={(e) => removeItem(index) } className={style.remove}>&#66338;</p></div>) : <div style={{textAlign: 'center'}}> <p>Seu carrinho está vazio <br></br>=(</p><p>Adicione um produto</p></div>}
+
                     </ul>
                     <div className={style.total}>
                     <p> Total: R$ {total} </p>
