@@ -1,0 +1,27 @@
+.indicador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 28px;
+    background-color: red;
+    font-weight: bolder;
+    width: 28px;
+    border-radius: 50%;
+    top: -12px;
+    right: -10px;
+}
+
+.indicadorOff{
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .indicador{
+        position: fixed;
+        top: 0px;
+        right: 10px;
+        
+    }
+}

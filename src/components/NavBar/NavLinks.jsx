@@ -5,6 +5,7 @@ import style from "./NavBar.module.css";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import Carrinho from "../Carrinho/Carrinho";
+import Indicador from '../Indicador/Indicador'
 
 
 export default function NavLinks(props) {
@@ -53,7 +54,11 @@ export default function NavLinks(props) {
         transition={{ delay: 0.4 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
+        <div className={style.carrinhoIndicador}>
         <Button onClick={(e) => setShowcart(true)} texto="CARRINHO" />
+        <Indicador />
+        </div>
+
       </motion.li>
       <motion.li
         initial={animateFrom}

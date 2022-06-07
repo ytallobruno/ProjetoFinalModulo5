@@ -18,12 +18,9 @@ export default function Cardapio() {
   const cardapioFiltrado = cardapio.filter(el => el.nome.toLowerCase().includes(filtro.toLowerCase()))
   const { produtos, setProdutos } = useProdutos();
 
-  function adicionaItem (){
-    span === false ? setSpan(true) : ''
-    setCounter(counter+=1)
-  }
 
- 
+
+
 
   useEffect(() => {
     fetch(import.meta.env.VITE_API_LINK)
@@ -49,7 +46,7 @@ export default function Cardapio() {
 
               <div className={style.cardapioDiv}>
               {cardapioFiltrado.map((element, index)=> 
-                          <div key={element.id} className={style.card}>
+                          <div key={index} className={style.card}>
                           <div className={style.cardImage}>
                             <img src={element.img} alt='foto do prato' />
                           </div>
@@ -60,9 +57,6 @@ export default function Cardapio() {
                             </div>
                             <div className={style.preco}>
                               <p>{element.preco}</p>
-                            <div className={style.adicionar}>
-                                <p onClick={(e) => adicionaItem()}>+</p>
-                            </div>
                             </div>
                             <div className={style.divButton}>
                             <span className={span ? style.spanOn : style.spanOff}>{counter}</span>
