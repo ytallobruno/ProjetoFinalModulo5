@@ -8,6 +8,7 @@ import Cardapio from "./components/Cardapio/Cardapio";
 import Cadastro from "./components/Cadastro/Cadastro";
 import Pagina404 from './Pages/Pagina404/Pagina404';
 import ProdutosProvider from "../context/Cart";
+import Login from "./pages/Login/Login";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
             <Route path='/carrinho' element={<Carrinho />} />
             <Route path="/cardapio" element={<Cardapio />}/>
             <Route path='/cadastro' element={<Cadastro />} />
+            <Route path='/login' element={<Login />} />
             <Route path='*' element={<Pagina404/>} />
           </Routes>
         </BrowserRouter>
