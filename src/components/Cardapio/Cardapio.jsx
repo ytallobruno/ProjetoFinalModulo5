@@ -13,6 +13,7 @@ export default function Cardapio() {
   const [cardapio, setCardapio] = useState([])
   const [filtro, setFiltro] = useState('')
   const [span, setSpan] = useState(false)
+  const [adicionado, setAdicionado] = useState()
   let [counter, setCounter] = useState(0)
   const cardapioFiltrado = cardapio.filter(el => el.nome.toLowerCase().includes(filtro.toLowerCase()))
   const { produtos, setProdutos } = useProdutos();
@@ -70,7 +71,7 @@ export default function Cardapio() {
                             texto='adicionar ao carrinho'
                             bgColor='#FFFF'
                             textColor='black'
-                            onClick={(e) => produtos.push(element)}
+                            onClick={(e) => setProdutos([...produtos, element])}
                             />
                             </div>
                           </div>
