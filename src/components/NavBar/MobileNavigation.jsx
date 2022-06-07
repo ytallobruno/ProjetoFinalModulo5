@@ -9,7 +9,7 @@ import Carrinho from "../Carrinho/Carrinho";
 
 export default function MobileNavigation() {
   const [open, setOpen] = useState(false);
-  const [showCart, setShowcart] = useState(false);
+  const[showCart, setShowcart] = useState(false);
   const hamburguerIcon = (
     <CgMenuRound className={style.Hamburguer} onClick={() => setOpen(!open)} />
   );

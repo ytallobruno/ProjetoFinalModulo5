@@ -4,9 +4,9 @@ import "./App.css";
 import Main from "./pages/Main/Main";
 import Carrinho from "./components/Carrinho/Carrinho";
 import Loader from "./components/Loader/Loader";
-import Footer from "./components/Footer/Footer";
 import Cardapio from "./components/Cardapio/Cardapio";
 import Pagina404 from './Pages/Pagina404/Pagina404';
+import ProdutosProvider from "../context/Cart";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,6 +17,7 @@ function App() {
   });
 
   return (
+    <ProdutosProvider>
     <div className="App">
       {isLoading == true ? (
         <Loader />
@@ -32,6 +33,7 @@ function App() {
         
       )}
     </div>
+    </ProdutosProvider>
   );
 }
 

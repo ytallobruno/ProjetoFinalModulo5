@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.877);
+    background-color: rgba(0, 0, 0, 0.926);
     backdrop-filter: blur(6px);
     height: 100vh;
     width: 35vw;
@@ -34,10 +34,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: fit-content;
-    margin-top: 70px;
+
 }
 
+.title h2{
+    color: #000;
+    background-color: yellow;
+    width: 80%;
+    text-align: center;
+    margin-top: 50px;
+}
 
 .title p{
     position: absolute;
@@ -47,10 +53,49 @@
     cursor: pointer;
 }
 
-
-.produtos{
-    padding-top: 80px;
+ul li{
+    list-style: none;
 }
+
+
+.remove{
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    width: 70%;
+
+}
+
+.total p{
+    text-align: center;
+    font-size: 22px;
+    background-color: yellow;
+    color: black;
+    margin: 0 auto;
+}
+
+.produtos ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listaProdutos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.listaProdutos li{
+    width: 100%;
+    padding: 5px 30px;
+}
+
+
 
 @media screen and (max-width: 900px){
 
@@ -70,16 +115,5 @@
         right: 20px;
         font-weight: 700;
     }
-
-
-    .produtos{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: absolute;
-    }
-
-
-
 
 }
