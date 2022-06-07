@@ -25,6 +25,7 @@
     border: 2px rgba(255, 255, 255, 0.466) solid;
     transition: height 2s, animation 1.2s;
     animation: carrinho-move 0.2s;
+    z-index: 1;
 }
 
 

@@ -6,6 +6,7 @@ import { BsHandbag } from "react-icons/bs";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Carrinho from "../Carrinho/Carrinho";
+import Indicador from "../Indicador/Indicador";
 
 export default function MobileNavigation() {
   const [open, setOpen] = useState(false);
@@ -30,8 +31,13 @@ export default function MobileNavigation() {
         </Link>
         {open ? closeIcon : hamburguerIcon}
         {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+        <Indicador />
       </nav>
-      <Carrinho showCart={showCart} closeCart={(e) => setShowcart(false)} />
+      <div className={style.carrinhoIndicador}>
+        <Carrinho showCart={showCart} closeCart={(e) => setShowcart(false)} />
+        
+      </div>
+      
     </div>
   );
 }

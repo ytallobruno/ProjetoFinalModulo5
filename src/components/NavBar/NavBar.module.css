@@ -81,6 +81,10 @@ a:visited {
   display: none;
 }
 
+.carrinhoIndicador{
+  position: relative;
+}
+
 @media (max-width: 900px) {
   .NavBar .navigation,
   .listaItens li:nth-child(4),
