@@ -46,7 +46,10 @@
   min-width: 120px;
   height: 40px;
   font-size: 12px;
-  border: solid 2px var(--cinzamedio);
+}
+
+.buttonDiv button {
+  border: solid 2px var(--amarelo);
 }
 
 .buttonDiv :nth-child(1) {
