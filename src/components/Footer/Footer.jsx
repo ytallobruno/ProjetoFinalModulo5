@@ -1,46 +1,53 @@
 import React, {useState} from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import styles from "./Footer.module.css";
-import SobreNos from "../Modal/SobreNos";
 import SejaCucina from "../Modal/SejaCucina";
-import Contato from "../Modal/Contato";
 
 export default function Footer () {
-    const [isSobreVisible, setIsSobreVisible] = useState (false);
     const [isSejaVisible, setIsSejaVisible] = useState (false);
-    const [isContatoVisible, setIsContatoVisible] = useState (false);
-  return (
-      <footer className={styles.footer}>
-          <ul className={styles.social_list}>
-            <li>
-                <FaFacebook />
-            </li>
-            <li>
-                <FaInstagram />
-            </li>
-            <li>
-                <FaLinkedin />
-            </li>
-            <li onClick={()=>{setIsSobreVisible(true)}}> Sobre Nós </li>
-            {isSobreVisible ? (
-                <SobreNos onClose={()=> setIsSobreVisible(false)}/>
-                  ) : null}
-            <li onClick={()=>{setIsSejaVisible(true)}}> Seja Cucina </li>
-            {isSejaVisible ? (
-                <SejaCucina onClose={()=> setIsSejaVisible(false)}>
-                    <SejaCucina/>
-                </SejaCucina>
-                ) : null}
-            <li onClick={()=>{setIsContatoVisible(true)}}> Contato </li>
-            {isContatoVisible ? (
-                <Contato onClose={()=> setIsContatoVisible(false)}>
-                    <Contato/>
-                </Contato>
-                ) : null}
-        </ul>
-          <p className={styles.copy_right}>
-              <span>ResiliCucina</span> &copy; 2022
-          </p>
+
+return (
+    <footer className={styles.footer}>
+        <div className={styles.container}>   
+            <div className={styles.row}>   
+                <div className={styles.column}>   
+                    <ul className={styles.list_unstyled}>
+                        <li onClick={()=>{setIsSejaVisible(true)}} className={`${styles.item_list} ${styles.us_list}`}> Fale conosco </li>
+                    {isSejaVisible ? (
+                        <SejaCucina onClose={()=> setIsSejaVisible(false)}>
+                            <SejaCucina/>
+                        </SejaCucina>
+                        ) : null}
+                        <li className={`${styles.item_list} ${styles.us_list}`}>Conheça nossa equipe</li>
+                        <li className={`${styles.item_list} ${styles.us_list}`}>Sobre nós</li>                       
+                    </ul>
+                </div>
+                <div className={styles.column}>
+                    <h4>Contato</h4><br/>
+                        <ul>
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>Telefone: (11) 4458-6091</li>
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>E-mail: resili.cucina@rc.com</li>
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>Endereço: Rua Itália, 400<br/>Bairro do Bixiga, SP</li>
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>Whatsapp: <span className={styles.social_whats}>
+                                <a href="https://api.whatsapp.com/send?phone=+5548999999999"><FaWhatsapp /></a></span></li>
+                        </ul>                              
+                </div>
+                <div className={styles.column}>
+                    <h4>Redes sociais</h4><br/>
+                        <ul>
+                            <li className={`${styles.item_list} ${styles.social_list}`}><FaFacebook /></li>
+                            <li className={`${styles.item_list} ${styles.social_list}`}><FaInstagram /></li>
+                            <li className={`${styles.item_list} ${styles.social_list}`}><FaLinkedin /></li>
+                        </ul>
+                </div>   
+            </div>
+            <div className={styles.row}>
+                <p className={styles.copy_right}>
+                <span> &copy; {new Date().getFullYear()} ResiliCucina | All rights reserved</span>
+                </p>
+            </div>
+        </div>
+
       </footer>
   );
 }
