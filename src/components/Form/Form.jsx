@@ -9,14 +9,14 @@ import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import NavBar from "../NavBar/NavBar";
 
 export default function Form() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [show, setShow] = useState(false);
-  const [usuario, setUsuario] = useState([]);
-  const { logged, setLogged } = useLogin();
-  const [sucesso, setSucesso] = useState("");
 
-  console.log(logged);
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [show, setShow] = useState(false)
+  const [usuario, setUsuario] = useState([])
+  const {logged, setLogged} = useLogin()
+  const [sucesso, setSucesso] = useState('')
+   
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -24,10 +24,12 @@ export default function Form() {
   };
 
   useEffect(() => {
-    fetch("https://api-modulo4.herokuapp.com/api/clientes/")
-      .then((res) => res.json())
-      .then((res) => setUsuario([...res.clientes]));
-  }, []);
+
+    fetch(import.meta.env.VITE_POST_CLIENT)
+    .then((res) => res.json())
+    .then((res) => setUsuario([...res.clientes]) )
+  }, [])
+
 
   function fazerLogin() {
     usuario.forEach(function (user) {
