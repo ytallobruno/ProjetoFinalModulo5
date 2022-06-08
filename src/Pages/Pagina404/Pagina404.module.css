@@ -8,8 +8,9 @@
 
 
 .img {
-    width: 400px;
-    height: 400px;
+    width: auto;
+    height: auto;
+    
     }
 
 .txt {
@@ -18,3 +19,13 @@
     color: #E32B2B;; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
+@media (max-width: 800px) {
+    .img {
+        width: 50%;
+        height: 50%;
+    }
+    .txt {
+        font-size: 15px;
+    }
+}

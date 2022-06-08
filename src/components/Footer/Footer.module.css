@@ -26,13 +26,15 @@ font-size: 1.2em;
 
 .item_list {
   list-style: none;
+  cursor: pointer;
 }
 
 .us_list {
   padding: 2em 0;
   text-align: center;
+ 
 }
-/* NÃO CONSIGO COLOCAR O POINTER APENAS NA PALAVRA, ELE OCUPA O BLOCO INTEIRO DA PALAVRA, ARRUMAR DEPOIS */
+
 .contact_list {
   padding: 0.5em;
   text-align: initial;
