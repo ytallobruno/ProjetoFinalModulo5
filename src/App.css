@@ -47,7 +47,6 @@ input{
   background-color: var(--cinza);
   border: 2px solid var(--cinzaescuro);
   caret-color: var(--amarelo);
-  transition: 0.2s ease-in-out;
 }
 
 input:focus {

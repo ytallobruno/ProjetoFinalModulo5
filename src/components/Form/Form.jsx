@@ -61,7 +61,7 @@ export default function Form() {
             <input
               className={style.input}
               type="email"
-              placeholder="Digite seu e-mail..."
+              placeholder="usuario@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -71,7 +71,7 @@ export default function Form() {
               <input
                 className={style.input}
                 type={show ? "text" : "password"}
-                placeholder="Digite sua senha..."
+                placeholder="Digite sua senha"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />

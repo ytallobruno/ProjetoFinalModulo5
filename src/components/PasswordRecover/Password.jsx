@@ -81,7 +81,7 @@ export default function Password () {
 
                 <div className={style.inputDiv}>
                     <label> E-mail </label>
-                    <input type="text" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input placeholder="usuario@email.com" type="text" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
                     <div className={display ? style.showInput : style.hideInput}>
                     <label> Nova senha </label>
