@@ -14,10 +14,10 @@
 .container {
         display:flex;
         background-color: #090909;
-        opacity: 0.97;
+        opacity: 1.0;
         color:#F7CC32;
         width: 80%;
-        height: auto;
+        height: 90%;
         border-radius: 20px;
        }
 .txt {
