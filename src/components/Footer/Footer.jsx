@@ -14,6 +14,7 @@ return (
             <div className={styles.row}>   
                 <div className={styles.column}>   
                     <ul className={styles.list_unstyled}>
+                        <h4>Sobre </h4><br />
                         <li onClick={()=>{setIsSejaVisible(true)}} className={`${styles.item_list} ${styles.us_list}`}> Seja Cucina </li>
                     {isSejaVisible ? (
                         <SejaCucina onClose={()=> setIsSejaVisible(false)}>
@@ -29,7 +30,7 @@ return (
                         <Link style={{textDecoration:"none", color:" #F7CC32"}} to='/devs'>
                         <li className={`${styles.item_list} ${styles.us_list}`}>Conheça a nossa Equipe</li> 
                         </Link> 
-                        <Link style={{textDecoration:"none", color:" #F7CC32"}} to='/sobrenos' className={`${styles.item_list} ${styles.us_list}`}>
+                        <Link style={{textDecoration:"none", color:" #F7CC32"}} to='/sobrenos'>
                         <li className={`${styles.item_list} ${styles.us_list}`}>Sobre nós</li> 
                         </Link>                      
                     </ul>
