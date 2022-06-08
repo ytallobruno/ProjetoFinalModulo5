@@ -1,85 +1,87 @@
 @import "../../App.css";
 
-
-
-
 .Form {
   background-color: rgb(0, 0, 0, 0.7);
   border-radius: 10px;
   width: 450px;
   max-width: 90%;
   height: 500px;
-  max-height: 90vh;
-  margin: 30px auto;
-  border: 2px solid #8f8f8fc0;
+  max-height: 80vh;
+  margin: 3rem auto;
+  border: 2px solid var(--cinzamedio);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 60px 0;
-  
+  padding: 1rem;
 }
 
-h2{
+.Form h2, .Form label, .Form input {
+  color: var(--cinza);
+}
+
+.Form h2 {
   letter-spacing: 5px;
-  color: white;
 }
 
-
- h3 {
-   letter-spacing: 3px;
-    color: white;
-    font-size: 15px  ;
-    text-decoration: none;
+.Form label {
+  width: 80%;
+  letter-spacing: 3px;
+  font-size: 15px;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
 }
 
-p {
-    color: white;  
+.Form input:nth-child(1) {
+  margin-bottom: 0.5rem;
 }
 
 .input {
   border-radius: 5px;
-  cursor: pointer;
-  border: none;
   height: 36px;
   width: 80%;
   min-width: 180px;
   border-radius: 5px;
-  border: 2px solid #8f8f8fc0;
-  background-color: rgba(255, 255, 255, 0.25);
-  padding: 10px;
+  border: 1px solid var(--cinzaescuro);
+  background-color: rgba(255, 255, 255, 0.16);
+  padding: 0.8rem;
   margin: 10px 0;
-  color: white;
   position: relative;
+  caret-color: var(--amarelo);
+  transition: 0.15s ease-in-out;
 }
 
+.input:focus {
+  outline: 2px ridge var(--amarelo) 
+}
 
-h6{
+#sucesso {
+  font-size: 0.85rem;
+}
+
+.containerLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerLink a {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--cinza);
+  transition: 0.2s ease-in-out;
+}
+
+#sucesso,
+.containerLink a:hover {
   color: var(--amarelo);
-
-}
- 
-h6:hover{
- color: var(--vermelho);
 }
 
-.button {
- 
- display: flex;
- align-items: center;
- margin-top: -3%;
- margin-left: auto;
- margin-right: auto ;
- 
-
-} 
-
-.divEye{
+.divEye {
   position: relative;
   width: 80%;
 }
 
-.divEye input{
+.divEye input {
   width: 100%;
 }
 
@@ -87,15 +89,14 @@ h6:hover{
   display: flex;
   float: center;
   cursor: pointer;
-  color: white;
+  color: var(--cinza);
   position: absolute;
   top: 18px;
   right: 6px;
 }
 
-
 @media (max-width: 900px) {
-  #sucesso{
+  #sucesso {
     font-size: 12px;
   }
 }
