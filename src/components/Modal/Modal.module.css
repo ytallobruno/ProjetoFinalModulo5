@@ -13,9 +13,9 @@
     }
 .container {
         display:flex;
-        background-color: #090909;
-        opacity: 1.0;
-        color:#F7CC32;
+        background-color:rgba(0,0,0,0.8);
+        backdrop-filter: blur(10px);
+        color:var(--amarelo);
         width: 80%;
         height: 90%;
         border-radius: 20px;
@@ -44,7 +44,7 @@
     border-radius: 5px;
     background-color: #EDEDED;
     opacity: 0.8;
-    color:#090909;
+    color:var(--preto);
     width: 50%;
     }
 
