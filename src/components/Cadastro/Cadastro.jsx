@@ -81,10 +81,10 @@ function post(){
     <div>
       <NavBar />
       <div className={style.cadastro}>
+
+        <form action="">
         <h2> Cadastro </h2>
         <p> Preencha os dados para continuar </p>
-        <form action="">
-          
           <div className={style.inputDiv}>
             <label for='nome'> Nome </label>
             <input type='text' name='nome' id='nome' value={nome} onChange={(e) => setNome(e.target.value)}/>
