@@ -8,7 +8,7 @@ export default function Main () {
 
     return (
 
-            <div className={style.main}>
+            <div>
                 <NavBar />
                 <TextoPrincipal />
                 <Outlet />
