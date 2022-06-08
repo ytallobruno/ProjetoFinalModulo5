@@ -21,7 +21,7 @@ export default function TextoPrincipal () {
 
                 <div className={style.mainText}>
                     <p className={style.comidaItaliana}> Comida Italiana </p>
-                    <p> (de verdade) </p>
+                    <p className={style.deVerdade}> (de verdade) </p>
                     <p> na porta da sua casa </p>
                     <div className={style.buttonDiv}>
 
