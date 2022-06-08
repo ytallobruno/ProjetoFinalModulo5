@@ -88,6 +88,11 @@
   margin: 0 auto;
 }
 
+.pizzaFrame {
+  height: 100%;
+  max-width: 100%;
+}
+
 .motoboyImagem img {
   min-width: 300px;
 }
