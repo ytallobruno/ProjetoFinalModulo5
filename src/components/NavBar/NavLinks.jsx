@@ -39,20 +39,10 @@ export default function NavLinks(props) {
       >
         <Link to="/cardapio">Bebidas</Link>
       </motion.li>
-
       <motion.li
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.3 }}
-        onClick={() => props.isMobile && props.closeMobileMenu()}
-      >
-
-        <Link to="/cardapio"><Button texto="PEDIR" /></Link>
-      </motion.li>
-      <motion.li
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{ delay: 0.4 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
         <div className={style.carrinhoIndicador}>
