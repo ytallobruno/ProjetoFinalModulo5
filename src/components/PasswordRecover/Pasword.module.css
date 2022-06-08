@@ -7,8 +7,8 @@ form {
     align-items: center;
     width: 20vw;
     min-width: 350px;
-    height: 80vh;
-    min-height: 400px;
+    height: 100%;
+    min-height: 300px;
     border-radius: 10px;
     border: 2px solid var(--cinzamedio);
     padding: 1rem;
@@ -18,7 +18,7 @@ form {
 }
 
 form h1{
-    margin: 1.2rem 0;
+    margin-top: 1rem;
     font-size: 24px;
 }
 
@@ -28,6 +28,9 @@ form h1{
     flex-direction: column;
 }
 
+.inputDiv label{
+    margin-left: 15%;
+}
 
 .inputDiv input {
     color: var(--cinza);
@@ -37,6 +40,7 @@ form h1{
     border-radius: 5px;
     border: 1px solid var(--cinzaescuro);
     background-color: rgba(255, 255, 255, 0.20);
+    padding: 10px;
 }
 
 .showInput{
