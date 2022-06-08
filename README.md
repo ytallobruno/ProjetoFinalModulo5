@@ -17,7 +17,9 @@ Nosso desafio foi desenvolver um site implmementando o que fomos aprendendo dura
 
 <h2 id="andamento">Andamento do projeto 📈</h2>
 
-![Badge](https://img.shields.io/website?down_message=em%20andamento&label=STATUS&style=for-the-badge&up_message=conclu%C3%ADdo&url=https%3A%2F%2Fytallobruno.github.io%2FProjetoFinalModulo5%2F)
+> ![Badge](https://img.shields.io/website?down_message=em%20andamento&label=STATUS&style=for-the-badge&up_message=conclu%C3%ADdo&url=https://resili-cucina.netlify.app/)
+>
+> Para visualizar nosso projeto, <a href="https://resili-cucina.netlify.app/"> **clique aqui**</a>.
 
 <br>
 
@@ -27,8 +29,20 @@ Utilizamos as seguintes ferramentas em nosso Site:
 
 - Javascript
 - React (Vite)
-- React-Router-Dom
 - Deploy: Vercel
+- Além de dependências como:
+
+```json
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "framer-motion": "^6.3.6",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
+    "react-modal": "^3.15.1",
+    "react-router-dom": "^6.3.0"
+```
 
 <br>
 
