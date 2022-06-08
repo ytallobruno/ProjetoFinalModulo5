@@ -3,7 +3,6 @@ import style from "./TextoPrincipal.module.css"
 import Button from '../Button/Button'
 import { useState } from "react"
 import { Link } from 'react-router-dom'
-import Footer from '../Footer/Footer'
 
 export default function TextoPrincipal () {
 
@@ -62,7 +61,7 @@ export default function TextoPrincipal () {
             </ul>
         </div>
     </div>
-    <Footer />
 </div>
+    
     )
 }
