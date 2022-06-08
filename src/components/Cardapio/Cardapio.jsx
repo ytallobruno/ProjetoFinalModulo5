@@ -60,8 +60,6 @@ export default function Cardapio() {
                             <Button
                             width='100%'
                             texto='adicionar ao carrinho'
-                            bgColor='#FFFF'
-                            textColor='black'
                             onClick={(e) => setProdutos([...produtos, element])}
                             />
                             </div>
