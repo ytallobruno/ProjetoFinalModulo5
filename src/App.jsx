@@ -12,6 +12,7 @@ import Pagina404 from './Pages/Pagina404/Pagina404';
 import ProdutosProvider from "../context/Cart";
 import Form from './components/Form/Form'
 import LoginProvider from "../context/Login";
+import Password from "./components/PasswordRecover/Password";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
             <Route path="/sobrenos" element={<SobreNos/>}/>
             <Route path='/cadastro' element={<Cadastro />} />
             <Route path='/login' element={<Form />} />
+            <Route path='/recover' element={<Password />} />
             <Route path='*' element={<Pagina404/>} />
           </Routes>
         </BrowserRouter>
