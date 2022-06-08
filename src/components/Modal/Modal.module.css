@@ -48,11 +48,10 @@
     width: 50%;
     }
 
-
 .close {
-        background-color: transparent;
+        /* background-color: transparent;
         Border: none;
-        outline:none;
+        outline:none;  Código para deixar oculto se quiser */
         width: 32px;
         height: 32px;
         right: calc(-100% + 64px);
@@ -62,6 +61,7 @@
         position: relative;
         align-items: center;
         }
+
 .close:before{
     content: " ";
     position: absolute;
