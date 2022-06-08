@@ -53,6 +53,13 @@
   outline: 2px ridge var(--amarelo) 
 }
 
+.Form button {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
 #sucesso {
   font-size: 0.85rem;
 }
