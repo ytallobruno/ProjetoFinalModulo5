@@ -1,25 +1,37 @@
 import React, {useState} from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {Link} from "react-router-dom";
 import styles from "./Footer.module.css";
 import SejaCucina from "../Modal/SejaCucina";
+import FaleConosco from "../Modal/FaleConosco";
 
 export default function Footer () {
     const [isSejaVisible, setIsSejaVisible] = useState (false);
-
+    const [isFaleVisible, setIsFaleVisible] = useState (false);
 return (
     <footer className={styles.footer}>
         <div className={styles.container}>   
             <div className={styles.row}>   
                 <div className={styles.column}>   
                     <ul className={styles.list_unstyled}>
-                        <li onClick={()=>{setIsSejaVisible(true)}} className={`${styles.item_list} ${styles.us_list}`}> Fale conosco </li>
+                        <li onClick={()=>{setIsSejaVisible(true)}} className={`${styles.item_list} ${styles.us_list}`}> Seja Cucina </li>
                     {isSejaVisible ? (
                         <SejaCucina onClose={()=> setIsSejaVisible(false)}>
                             <SejaCucina/>
                         </SejaCucina>
                         ) : null}
-                        <li className={`${styles.item_list} ${styles.us_list}`}>Conheça nossa equipe</li>
-                        <li className={`${styles.item_list} ${styles.us_list}`}>Sobre nós</li>                       
+                         <li onClick={()=>{setIsFaleVisible(true)}} className={`${styles.item_list} ${styles.us_list}`}> Fale Conosco </li>
+                    {isFaleVisible ? (
+                        <FaleConosco onClose={()=> setIsFaleVisible(false)}>
+                            <FaleConosco/>
+                        </FaleConosco>
+                        ) : null}
+                        <Link  style={{textDecoration:"none", color:" #F7CC32"}} to='/devs'>
+                        <li className={`${styles.item_list} ${styles.us_list}`}>Conheça a nossa Equipe</li> 
+                        </Link> 
+                        <Link style={{textDecoration:"none", color:" #F7CC32"}} to='/sobrenos' className={`${styles.item_list} ${styles.us_list}`}>
+                        <li >Sobre nós</li> 
+                        </Link>                      
                     </ul>
                 </div>
                 <div className={styles.column}>
