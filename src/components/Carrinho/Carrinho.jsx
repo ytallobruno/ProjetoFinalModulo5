@@ -9,7 +9,7 @@ export default function Carrinho(props) {
 
     const { produtos, setProdutos } = useProdutos();
     const produtosCopy = [...produtos]
-    const [pedidoRealizado, setPedido] = useState('é necessário estar logado para realizar um pedido')
+    const [pedidoRealizado, setPedido] = useState('')
     const {logged, setLogged} = useLogin()
 
 

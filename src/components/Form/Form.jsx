@@ -84,11 +84,12 @@ export default function Form() {
             </div>
           </div><br></br>
 
-          <Button texto='Logar' type='submit' className="button" onClick={function(e){
+          <Button texto='Entrar' type='submit' className="button" onClick={function(e){
             e.preventDefault()
             fazerLogin()
           }} /><br></br><br></br>
           <p id={style.sucesso}>{sucesso}</p>
+          <Link style={{textDecoration: 'none'}} to="/recover"><h6>Esqueceu a senha?</h6></Link>
           <Link style={{textDecoration: 'none'}} to="/Cadastro"><h6>Ainda não é cadastrado? Cadastre-se Aqui!</h6></Link>
         </form>
         <Footer/>

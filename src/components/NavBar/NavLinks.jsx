@@ -46,7 +46,7 @@ export default function NavLinks(props) {
         transition={{ delay: 0.3 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Button texto="PEDIR" />
+        <Link to="/cardapio"><Button texto="PEDIR" /></Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
