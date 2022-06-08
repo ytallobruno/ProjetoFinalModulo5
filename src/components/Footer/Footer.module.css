@@ -1,11 +1,12 @@
 @import "../../App.css";
 
 .footer {
-  color: #F7CC32;
+  color: var(--amarelo);
   max-width: 100vw;
   height: 35vh;
   margin-top: 5em;
   display: block;
+  background-color: rgb(22, 21, 21);
 }
 
 .row {
@@ -22,6 +23,10 @@
   margin: 0 10px;
 }
 
+.us {
+  cursor: pointer;
+}
+
 .item_list {
   padding: 2px;
   margin: 2px;
@@ -32,6 +37,18 @@ font-size: 1.2em;
 padding: 0.5rem 0;
 }
 
+.social_list :hover {
+  cursor: pointer;
+  color: var(--cinza);
+}
+
+.social_whats {
+font-size: 1.2em;
+}
+
+.social_whats :hover {
+  color: var(--cinza);
+}
 
 @media (max-width: 900px) {
   .item_list {
