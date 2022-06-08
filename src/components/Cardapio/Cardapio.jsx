@@ -9,7 +9,6 @@ import { useProdutos } from "../../../context/Cart"
 
 export default function Cardapio() {
 
-
   const [cardapio, setCardapio] = useState([])
   const [filtro, setFiltro] = useState('')
   const [span, setSpan] = useState(false)
@@ -17,8 +16,6 @@ export default function Cardapio() {
   let [counter, setCounter] = useState(0)
   const cardapioFiltrado = cardapio.filter(el => el.nome.toLowerCase().includes(filtro.toLowerCase()))
   const { produtos, setProdutos } = useProdutos();
-
-
 
 
 

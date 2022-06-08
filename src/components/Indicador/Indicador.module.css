@@ -19,7 +19,6 @@
 
 @media (max-width: 900px) {
     .indicador{
-        position: fixed;
         top: 0px;
         right: 10px;
         

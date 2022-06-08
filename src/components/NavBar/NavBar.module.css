@@ -94,7 +94,7 @@ a:visited {
 
   .NavBar .MobileNavigation {
     width: 100%;
-    position: fixed;
+    position: relative;
     height: 8.5vh;
     display: flex;
     align-items: center;
