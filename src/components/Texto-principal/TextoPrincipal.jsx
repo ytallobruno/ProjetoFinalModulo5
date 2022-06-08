@@ -25,16 +25,18 @@ export default function TextoPrincipal () {
                     <p> na porta da sua casa </p>
                     <div className={style.buttonDiv}>
 
-                        <Link to='/cardapio' style={{border: 'none'}}>
+                        <Link to='/cadastro' style={{border: 'none'}}>
                             <Button
-                            texto='Cardápio'/>
+                            texto='Cadastre-se'/>
                         </Link>
 
+                        <Link to='/cardapio' style={{border: 'none'}}>
                         <Button
                         changeBg = {alteraBg}
                         textColor = {txtColor}
                         texto='Peça aqui' bgColor={bgColor}
                         />
+                        </Link>
 
                     </div>
                 </div>
