@@ -36,6 +36,9 @@
 }
 
 .input {
+
+  cursor: pointer;
+  border: none;
   border-radius: 5px;
   height: 36px;
   width: 80%;

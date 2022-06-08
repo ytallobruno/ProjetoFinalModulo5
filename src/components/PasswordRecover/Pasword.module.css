@@ -39,6 +39,25 @@ form h1{
     padding: 10px;
 }
 
+.showInput{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.showInput input{
+    width: 100%;
+}
+
+.showInput label{
+margin: 0;
+}
+
+.hideInput{
+    display: none;
+}
 .sucess{
     background-color: yellow;
     color: black;
