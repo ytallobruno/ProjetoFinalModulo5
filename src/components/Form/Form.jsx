@@ -21,8 +21,6 @@ export default function Form() {
   const [sucesso, setSucesso] = useState('')
    
 
-  console.log(logged)
-
   const handleClick = (e) =>{
    e.preventDefault()
    setShow(!show);
@@ -30,10 +28,11 @@ export default function Form() {
 
 
   useEffect(() => {
-    fetch('https://api-modulo4.herokuapp.com/api/clientes/')
+    fetch(import.meta.env.VITE_POST_CLIENT)
     .then((res) => res.json())
     .then((res) => setUsuario([...res.clientes]) )
   }, [])
+
 
   function fazerLogin(){
     usuario.forEach(function(user){
