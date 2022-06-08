@@ -33,16 +33,16 @@ export default function Form() {
     usuario.forEach(function (user) {
       if (user.email_cliente === email && user.senha === password) {
         setLogged(true);
-        setSucesso("login realizado com sucesso");
+        setSucesso("Login realizado com sucesso!");
         setTimeout(() => {
           setSucesso("");
-        }, 2500);
+        }, 3000);
       } else {
         setLogged(false);
-        setSucesso("e-mail e senha não coincidem");
+        setSucesso("E-mail e senha não coincidem");
         setTimeout(() => {
           setSucesso("");
-        }, 2500);
+        }, 3000);
       }
     });
   }
@@ -90,21 +90,26 @@ export default function Form() {
               </div>
             </div>
 
+            <p id={style.sucesso}>{sucesso}</p>
+
             <Button
               texto="Entrar"
               type="submit"
-              className="button"
               onClick={function (e) {
                 e.preventDefault();
                 fazerLogin();
               }}
             />
 
-            
-            <Link style={{ textDecoration: "none" }} to="/Cadastro">
-              <p>Ainda não é cadastrado? Cadastre-se Aqui!</p>
-            </Link>
-            <p id={style.sucesso}>{sucesso}</p>
+            <div className={style.containerLink}>
+              <Link style={{ textDecoration: "none" }} to="/recover">
+                Esqueceu a senha?
+              </Link>
+
+              <Link style={{ textDecoration: "none" }} to="/Cadastro">
+                Ainda não é cadastrado? Cadastre-se Aqui!
+              </Link>
+            </div>
           </form>
           <Footer />
         </div>
