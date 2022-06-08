@@ -1,0 +1,139 @@
+/* //@import "../../App.css";// */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.containergeral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.txt {
+    width: 450px;
+    height: 480px;
+    color: #F7CC32;
+    background-color: #090909;
+    font-weight: italic;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: #F7CC32;
+    border: solid;
+    cursor: pointer;
+    }
+
+.img {
+    width: 100%;
+    height: 90%;
+    border-style: 10px;
+    border-radius: 5px;
+    }
+
+.box {
+        width: auto;
+        height: auto;
+        margin: 5px auto;
+        display: inline-block;
+        border-color: #F7CC32;
+        color: #F7CC32;
+        background-color: #090909;
+        font-weight: italic;
+      
+ }
+
+.flipcontainer {
+    perspective: 1000px; 
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    height: 450px;
+    margin-left: 250px;
+    margin-top: 100px;
+    }
+
+.flipper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 50px;
+      }
+
+.flipcontainer .flipper {
+	transition: all 0.5s;
+    transform-style: preserve-3d;
+    display:flex;
+    justify-content: center;
+    
+    }
+
+.flipcontainer:hover .flipper{
+    transform: rotateY(180deg);
+    /* se quiser uma animação na vertical,
+    troque por rotateX(180deg)
+    */
+}
+  
+.front, .back{
+	backface-visibility: hidden;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    }
+    
+.back {
+    transform: rotateY(180deg);
+
+}
+
+
+@media (max-width: 900px) {
+        .container {
+            width: auto;
+            height: auto;
+            padding-top: 95px;
+        }
+
+        .containergeral {
+            width: auto;
+            height: 800vh;
+            margin: 0 auto;
+            display:flex;
+            flex-direction: column;
+}
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+        .txt {
+            font-size: 10px;
+            width: 90px;
+            height: 400px;
+        }
+
+        .flippercontainer {
+            width: 100px;
+            height: 400px;
+        
+        }
+
+    .front .back {
+         width: 100px;
+         height: 400px;
+              }
+    
+        
+            }

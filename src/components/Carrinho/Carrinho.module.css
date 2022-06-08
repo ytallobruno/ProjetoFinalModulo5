@@ -13,9 +13,8 @@
 .carrinho{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.877);
+    background-color: rgba(0, 0, 0, 0.926);
     backdrop-filter: blur(6px);
     height: 100vh;
     width: 35vw;
@@ -26,6 +25,7 @@
     border: 2px rgba(255, 255, 255, 0.466) solid;
     transition: height 2s, animation 1.2s;
     animation: carrinho-move 0.2s;
+    z-index: 1;
 }
 
 
@@ -34,10 +34,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: fit-content;
-    margin-top: 70px;
+
 }
 
+.title h2{
+    color: #000;
+    background-color: yellow;
+    width: 80%;
+    text-align: center;
+    margin: 90px 0 60px 0;
+}
 
 .title p{
     position: absolute;
@@ -47,12 +53,66 @@
     cursor: pointer;
 }
 
-
-.produtos{
-    padding-top: 80px;
+ul li{
+    list-style: none;
 }
 
-@media screen and (max-width: 900px){
+
+.remove{
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: absolute;
+    bottom: 35px;
+}
+
+.total p{
+    border: 0;
+    font-size: 22px;
+    background-color: yellow;
+    color: black;
+    margin: 15px auto;
+    padding-left: 0;
+}
+
+.produtos ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listaProdutos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.listaProdutos li{
+    width: 100%;
+    padding: 5px 30px;
+    transition: height 2s, animation 1.2s;
+    animation: carrinho-move 0.2s;
+    position: relative;
+}
+
+#pedidoRealizado{
+    color: red;
+    font-size: 12px;
+    width: 100%;
+    font-weight: bolder;
+    margin: 20px auto;
+    padding: 0;
+}
+
+
+
+@media (max-width: 900px){
 
     .carrinho{
         width: 100%;
@@ -70,16 +130,5 @@
         right: 20px;
         font-weight: 700;
     }
-
-
-    .produtos{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: absolute;
-    }
-
-
-
 
 }
