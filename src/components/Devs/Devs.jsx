@@ -18,9 +18,9 @@ export default function Devs() {
 
     <span className={styles.box}>
             Conheça nossa Equipe de Desenvolvedores!
-
-            <br/>   
     </span> 
+    <br/>
+    <br/>
  
  <div className={styles.containergeral}>
  <div className={styles.flipcontainer}>

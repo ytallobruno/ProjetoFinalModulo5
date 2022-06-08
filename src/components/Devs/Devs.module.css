@@ -7,7 +7,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-}
+    margin-bottom: 200px;
+    }
 
 .containergeral {
     display: flex;
@@ -15,12 +16,14 @@
     width: 100vw;
     height: 100vh;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-left: 200px;
+ 
 }
 
 .txt {
-    width: 170px;
-    height: 320px;
+    width: 200px;
+    height: 300px;
     color: #F7CC32;
     background-color: #090909;
     font-weight: italic;
@@ -68,8 +71,9 @@
     display: flex;
     flex-direction: row;
     width: 300px;
-    height: 250px;
-    margin: 20px 30px;
+    height: 400px;
+    margin: 10px 20px;
+   
   }
 
 
@@ -97,7 +101,7 @@
 .front, .back{
 	backface-visibility: hidden;
     width: 200px;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     position:absolute;
@@ -108,36 +112,32 @@
 
 }
 
-
-@media (max-width: 900px) {
+/* 
+@media (min-width: 400px) {
         .container {
             width: 100%;
             height: 500vh;
-            padding-top: 95px;
-        }
+            }
 
         .containergeral {
             width: 100%;
             height: 500vh;
             margin: 0 auto;
-        }
+            padding: auto;
+                   }
 
-              }
-        .txt {
-            font-size: 15px;
-        }
-
-        .flippercontainer {
+              
+       .flippercontainer {
             width: 100px;
+            height: 100px;
+           
         
         }
-
-
 
      .front .back {
          width: auto;
          height: auto;
               }
     
-        
-    
+            }
+     */
