@@ -30,13 +30,14 @@ export default function Form() {
     .then((res) => setUsuario([...res.clientes]) )
   }, [])
 
-
+ console.log(usuario)
   function fazerLogin() {
-    usuario.forEach(function (user) {
-      if (user.email_cliente === email && user.senha === password) {
+    const loginRealizado = usuario.filter(user => user.email_cliente === email && user.senha === password)
+      if (loginRealizado.length > 0) {
         setLogged(true);
         setSucesso("Login realizado com sucesso!");
         setTimeout(() => {
+          loginRealizado.pop()
           setSucesso("");
         }, 3000);
       } else {
@@ -46,8 +47,7 @@ export default function Form() {
           setSucesso("");
         }, 3000);
       }
-    });
-  }
+    };
 
   return (
     <div>
