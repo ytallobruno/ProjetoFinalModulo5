@@ -68,6 +68,7 @@ ul li{
     width: 80%;
     position: absolute;
     bottom: 35px;
+
 }
 
 .total p{
@@ -102,9 +103,9 @@ ul li{
 }
 
 #pedidoRealizado{
+    display: inline;
     color: red;
     font-size: 12px;
-    width: 100%;
     font-weight: bolder;
     margin: 20px auto;
     padding: 0;
