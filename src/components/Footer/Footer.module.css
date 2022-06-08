@@ -1,69 +1,39 @@
 @import "../../App.css";
 
 .footer {
-  margin-top: 30px;
-  background-color: #090909;
+  background-color: #292828;
   color: #F7CC32;
-  padding-top: 2em;
-  width: 100%;
-  max-width: 100%;
-}
-
-.container {
-display: block;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 5em;
+  display: block;
 }
 
 .row {
+  display: flex;
+  width: 100%;
+
   text-align: center;
+  justify-content: center;
 }
 
 .column {
-display: inline-block;
-margin: 0 5em 0 5em;
-padding: 1em;
-font-size: 1.2em;
+  width: 100%;
+  margin: 0 10px;
 }
 
 .item_list {
-  list-style: none;
-  cursor: pointer;
+  padding: 2px;
+  margin: 2px;
 }
 
 .us_list {
-  padding: 2em 0;
-  text-align: center;
- 
-}
 
-.contact_list {
-  padding: 0.5em;
-  text-align: initial;
-}
 
-.a {
-text-decoration: none;
-color: #F7CC32;
-}
-
-.social_whats {
-  font-size: 1.3em;
-  color: #F7CC32;
 }
 
 .social_list {
-  margin: 0.6em 0em;
-  cursor: pointer;
-  font-size: 1.8em;
-  text-align: center;
-  padding: 0em 0;
-}
-
-
-
-.social_list :hover{
-  color: #fff;
-}
-
-.copy_right {
-  font-size: 1.1em;
+  
+font-size: 1.2em;
+padding: 2px;
 }
