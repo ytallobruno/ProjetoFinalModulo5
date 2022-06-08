@@ -1,4 +1,3 @@
-import style from "./Main.module.css"
 import { Outlet } from "react-router-dom"
 import TextoPrincipal from '../../components/Texto-principal/TextoPrincipal'
 import NavBar from "../../components/NavBar/NavBar"
