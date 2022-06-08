@@ -8,7 +8,8 @@ import Cardapio from "./components/Cardapio/Cardapio";
 import Cadastro from "./components/Cadastro/Cadastro";
 import Pagina404 from './Pages/Pagina404/Pagina404';
 import ProdutosProvider from "../context/Cart";
-import Login from "./pages/Login/Login";
+import Form from './components/Form/Form'
+import LoginProvider from "../context/Login";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,25 +20,28 @@ function App() {
   });
 
   return (
-    <ProdutosProvider>
+
     <div className="App">
       {isLoading == true ? (
         <Loader />
       ) : (
+        <ProdutosProvider>
+        <LoginProvider>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Main />}/>
             <Route path='/carrinho' element={<Carrinho />} />
             <Route path="/cardapio" element={<Cardapio />}/>
             <Route path='/cadastro' element={<Cadastro />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/login' element={<Form />} />
             <Route path='*' element={<Pagina404/>} />
           </Routes>
         </BrowserRouter>
-        
+        </LoginProvider>
+        </ProdutosProvider>
       )}
     </div>
-    </ProdutosProvider>
+
   );
 }
 

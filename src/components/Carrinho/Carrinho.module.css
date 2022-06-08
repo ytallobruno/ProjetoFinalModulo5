@@ -64,6 +64,7 @@ ul li{
 
 .total{
     display: flex;
+    flex-direction: column;
     width: 70%;
     position: absolute;
     bottom: 35px;
@@ -74,7 +75,7 @@ ul li{
     font-size: 22px;
     background-color: yellow;
     color: black;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .produtos ul{
@@ -99,9 +100,18 @@ ul li{
     position: relative;
 }
 
+#pedidoRealizado{
+    color: red;
+    font-size: 12px;
+    width: 100%;
+    font-weight: bolder;
+    margin: 20px auto;
+    padding: 0;
+}
 
 
-@media screen and (max-width: 900px){
+
+@media (max-width: 900px){
 
     .carrinho{
         width: 100%;

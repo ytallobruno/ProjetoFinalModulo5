@@ -1,14 +1,18 @@
 import style from './Carrinho.module.css'
 import React, { useState } from "react";
 import { useProdutos } from '../../../context/Cart';
-import ProdutosProvider from "../../../context/Cart"
+import Button from '../Button/Button';
+import { useLogin } from "../../../context/Login";
 
 
 export default function Carrinho(props) {
 
     const { produtos, setProdutos } = useProdutos();
     const produtosCopy = [...produtos]
-    
+    const [pedidoRealizado, setPedido] = useState('')
+    const {logged, setLogged} = useLogin()
+
+
     const precos = produtosCopy.map(produto => parseFloat(produto.preco.substring(3,8).replaceAll(',', '.')))
     const total = arredondar(precos.reduce((initial, final) => initial + final, 0)).replaceAll('.',',')
     
@@ -21,9 +25,23 @@ export default function Carrinho(props) {
         return (Math.round(n * 100) / 100).toFixed(2);
     }
 
+    function timeOut () {
+        setTimeout(() => {
+            setPedido('')
+        }, 1500);
+    }
 
+    function fazerPedido() {
+        console.log(logged)
+        if(logged) {
+            setPedido('pedido realizado com sucesso')
+            timeOut()
+        } else {
+            setPedido('é necessário estar logado para realizar um pedido')
+            timeOut()
+        }
+    }
     return (
-        <ProdutosProvider>
                 <div>
                 <div className={props.showCart ? style.carrinho : style.carrinhoClosed}>
                     <div className={style.title}>
@@ -36,11 +54,17 @@ export default function Carrinho(props) {
                     </ul>
                     <div className={style.total}>
                     <p> Total: R$ {total} </p>
+                    <Button onClick={function (e){
+                        e.preventDefault();
+                        fazerPedido()
+                    }} display={produtos.length > 0 ? 'inline-block' : 'none'} texto='FINALIZAR PEDIDO' /> 
+                    <p id={style.pedidoRealizado}>{pedidoRealizado}</p>
                     </div>
                     
                  </div>
                  </div>
-        </ProdutosProvider>
+
+
 
     )
 }
