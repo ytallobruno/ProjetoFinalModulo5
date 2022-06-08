@@ -1,7 +1,7 @@
 import { BrowserRouter, Outlet, Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Main from "./pages/Main/Main";
+import Main from "./Pages/Main/Main";
 import Carrinho from "./components/Carrinho/Carrinho";
 import Loader from "./components/Loader/Loader";
 import Cardapio from "./components/Cardapio/Cardapio";
