@@ -89,7 +89,7 @@ function post(){
             <label for='nome'> Nome </label>
             <input type='text' name='nome' id='nome' value={nome} onChange={(e) => setNome(e.target.value)}/>
             <label for='email'> Email </label>
-            <input type='text' name='email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input placeholder="usuario@email.com" type='text' name='email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} />
 
             <label for='senha'> Senha </label>
             <input type='password' name='senha' id='senha' value={senha} onChange={(e) => setSenha(e.target.value)} />

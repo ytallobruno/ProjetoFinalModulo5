@@ -1,70 +1,75 @@
-.cadastro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    height: fit-content;
+@import "../../App.css";
+
+.cadastro {
+  width: 40vw;
+  min-width: 350px;
+  height: 50vh;
+  min-height: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--cinza);
+  height: fit-content;
 }
 
 .cadastro h2 {
-    color: white;
-    letter-spacing: 10px;
+  color: var(--cinza);
+  letter-spacing: 10px;
 }
 
 .cadastro form {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
-.inputDiv{
-    width: 30%;
-    min-width: 250px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+.inputDiv {
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-
-.inputDiv input{
-    height: 36px;
-    width: 100%;
-    min-width: 180px;
-    border-radius: 5px;
-    border: 2px solid #8f8f8fc0;
-    background-color: rgba(255, 255, 255, 0.25);
-    padding: 10px;
-    margin: 10px 0;
-    color: white;
+.inputDiv input {
+  height: 36px;
+  width: 100%;
+  min-width: 180px;
+  border-radius: 5px;
+  border: 1px solid var(--cinzaescuro);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 10px 0;
+  color: var(--cinza);
 }
 
-.inputDiv button{
-    margin-top: 10px;
+.inputDiv button {
+  margin-top: 10px;
 }
 
-.confirmarDiv{
-    width: 100%;
+.confirmarDiv {
+  width: 100%;
 }
 
-.confirmarDiv p{
-font-size: 12px;
- width: 100%;
- margin: 0 auto ;
- color: red;
+.confirmarDiv p {
+  font-size: 12px;
+  width: 100%;
+  margin: 0 auto;
+  color: red;
 }
 
+@media screen and (max-width: 900px) {
+  .cadastro {
+    padding-top: 80px;
+  }
 
-@media screen and (max-width: 900px){
-    .cadastro{
-        padding-top: 80px;
-    }
+  .inputDiv {
+    margin-top: 20px;
+  }
 
-    .inputDiv{
-        margin-top: 20px;
-    }
-
-    .confirmarDiv p{ 
-        font-size: 14px;
-        margin: 0 10px;
-    }
-
+  .confirmarDiv p {
+    font-size: 14px;
+    margin: 0 10px;
+  }
 }
