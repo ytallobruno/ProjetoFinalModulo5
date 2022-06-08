@@ -41,11 +41,10 @@ export default function TextoPrincipal () {
                 </div>
 
             <div className="style.videoDiv">
-                <video className={style.videoContainer}  autoPlay="autoplay" loop='loop' muted="muted">
-                <source type="video/mp4" autoPlay src="../../../public/Videos/main-video.mp4"/>
-            Video não compatível no seu navegador
-                </video>
+                <div className={style.videoContainer}  autoPlay="autoplay" loop='loop' muted="muted">
+                <img src="https://media1.giphy.com/media/4ayiIWaq2VULC/giphy.gif?cid=790b7611e1ef4c5d510821b2427ecea7ad3606bd27df4152&rid=giphy.gif&ct=g" className={style.pizzaFrame} frameBorder="0"></img>
                 </div>
+            </div>
     </div>
     <div className={style.motoboy}>
         <div className={style.motoboyImagem}>
