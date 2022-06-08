@@ -11,7 +11,7 @@ form {
     min-height: 400px;
     border-radius: 10px;
     border: 2px solid var(--cinzamedio);
-    padding: 20px;
+    padding: 1rem;
     color: var(--cinza);
     margin: 0 auto;
     justify-content: space-evenly;
@@ -35,7 +35,7 @@ form h1{
 .inputDiv input {
     color: var(--cinza);
     align-self: center;
-    width: 70%;
+    width: 100%;
     margin: 20px 0;
     border-radius: 5px;
     border: 1px solid var(--cinzaescuro);
@@ -46,7 +46,7 @@ form h1{
 .showInput{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -59,12 +59,15 @@ form h1{
 margin: 0;
 }
 
+.inputDiv button {
+    margin-bottom: 2rem;
+}
+
 .hideInput{
     display: none;
 }
 
 .sucess{
-    /* background-color: var(--amarelo); */
     color: var(--amarelo);
     padding: 0 30px;
     font-weight: bolder;
