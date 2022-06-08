@@ -3,7 +3,6 @@ import style from "./TextoPrincipal.module.css"
 import Button from '../Button/Button'
 import { useState } from "react"
 import { Link } from 'react-router-dom'
-import Footer from '../Footer/Footer'
 
 export default function TextoPrincipal () {
 
@@ -21,20 +20,22 @@ export default function TextoPrincipal () {
 
                 <div className={style.mainText}>
                     <p className={style.comidaItaliana}> Comida Italiana </p>
-                    <p> (de verdade) </p>
+                    <p className={style.deVerdade}> (de verdade) </p>
                     <p> na porta da sua casa </p>
                     <div className={style.buttonDiv}>
 
-                        <Link to='/cardapio' style={{border: 'none'}}>
+                        <Link to='/cadastro' style={{border: 'none'}}>
                             <Button
-                            texto='Cardápio'/>
+                            texto='Cadastre-se'/>
                         </Link>
 
+                        <Link to='/cardapio' style={{border: 'none'}}>
                         <Button
                         changeBg = {alteraBg}
                         textColor = {txtColor}
                         texto='Peça aqui' bgColor={bgColor}
                         />
+                        </Link>
 
                     </div>
                 </div>
@@ -60,7 +61,7 @@ export default function TextoPrincipal () {
             </ul>
         </div>
     </div>
-    <Footer />
 </div>
+    
     )
 }

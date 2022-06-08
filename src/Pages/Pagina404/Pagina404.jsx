@@ -2,13 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Pagina404.module.css";
 import ResiliCucina from "../../assets/images/ResiliCucina.png";
+import {BiGhost} from "react-icons/bi";
+
 
 export default function Pagina404() {
      return (
 
 <body className={styles.container}>  
         <div className={styles.box}>
-            <p className={styles.txt}><i>Dispiace.</i><br/>
+            <p className={styles.txt}><i>Dispiace, Pagina Non Trovata</i>
+            <br/>
+            <BiGhost/>
+            <br/>
             Desculpe, Página Não Encontrada!</p>
         </div>
 

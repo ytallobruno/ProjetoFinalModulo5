@@ -1,46 +1,65 @@
 import React, {useState} from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {Link} from "react-router-dom";
 import styles from "./Footer.module.css";
-import SobreNos from "../Modal/SobreNos";
 import SejaCucina from "../Modal/SejaCucina";
-import Contato from "../Modal/Contato";
+import FaleConosco from "../Modal/FaleConosco";
 
 export default function Footer () {
-    const [isSobreVisible, setIsSobreVisible] = useState (false);
     const [isSejaVisible, setIsSejaVisible] = useState (false);
-    const [isContatoVisible, setIsContatoVisible] = useState (false);
-  return (
-      <footer className={styles.footer}>
-          <ul className={styles.social_list}>
-            <li>
-                <FaFacebook />
-            </li>
-            <li>
-                <FaInstagram />
-            </li>
-            <li>
-                <FaLinkedin />
-            </li>
-            <li onClick={()=>{setIsSobreVisible(true)}}> Sobre Nós </li>
-            {isSobreVisible ? (
-                <SobreNos onClose={()=> setIsSobreVisible(false)}/>
-                  ) : null}
-            <li onClick={()=>{setIsSejaVisible(true)}}> Seja Cucina </li>
-            {isSejaVisible ? (
-                <SejaCucina onClose={()=> setIsSejaVisible(false)}>
-                    <SejaCucina/>
-                </SejaCucina>
-                ) : null}
-            <li onClick={()=>{setIsContatoVisible(true)}}> Contato </li>
-            {isContatoVisible ? (
-                <Contato onClose={()=> setIsContatoVisible(false)}>
-                    <Contato/>
-                </Contato>
-                ) : null}
-        </ul>
-          <p className={styles.copy_right}>
-              <span>ResiliCucina</span> &copy; 2022
-          </p>
-      </footer>
-  );
+    const [isFaleVisible, setIsFaleVisible] = useState (false);
+return (
+    <footer className={styles.footer}> 
+        <div className={styles.container}> 
+            <div className={styles.row}>   
+                <div className={styles.column}>   
+                    <h4>Sobre </h4><br />
+                    <ul className={styles.us}>
+                        <li onClick={()=>{setIsSejaVisible(true)}} className={`${styles.item_list} ${styles.us}`}> Seja Cucina </li>
+                    {isSejaVisible ? (
+                        <SejaCucina onClose={()=> setIsSejaVisible(false)}>
+                            <SejaCucina/>
+                        </SejaCucina>
+                        ) : null}
+                        <li onClick={()=>{setIsFaleVisible(true)}} className={`${styles.item_list} ${styles.us}`}> Fale Conosco </li>
+                    {isFaleVisible ? (
+                        <FaleConosco onClose={()=> setIsFaleVisible(false)}>
+                            <FaleConosco/>
+                        </FaleConosco>
+                        ) : null}
+                        <Link style={{textDecoration:"none", color:"var(--amarelo)"}} to='/devs'>
+                        <li className={`${styles.item_list} ${styles.us_list}`}>Conheça a nossa Equipe</li> 
+                        </Link> 
+                        <Link style={{textDecoration:"none", color:"var(--amarelo)"}} to='/sobrenos'>
+                        <li className={`${styles.item_list} ${styles.us_list}`}>Sobre nós</li> 
+                        </Link>                      
+                    </ul>
+                </div>
+                <div className={styles.column}>
+                    <h4>Contatos</h4><br/>
+                        <ul>
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>Telefone: (11) 4458-6091</li>                            
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>Whatsapp: <span className={styles.social_whats} style={{textDecoration:"none", color:" #F7CC32"}}>
+                                <a style={{textDecoration:"none", color:"var(--amarelo)"}} href="https://api.whatsapp.com/send?phone=+5548999999999"><FaWhatsapp /></a></span></li>
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>E-mail: resili.cucina@rc.com</li>
+                            <li className={`${styles.item_list} ${styles.contact_list}`}>Endereço: Rua Itália, 400 Bairro do Bixiga, SP</li>
+                        </ul>                              
+                </div>
+                <div className={styles.column}>
+                    <h4>Redes sociais</h4><br/>
+                        <ul>
+                            <li className={`${styles.item_list} ${styles.social_list}`}><FaFacebook /></li>
+                            <li className={`${styles.item_list} ${styles.social_list}`}><FaInstagram /></li>
+                            <li className={`${styles.item_list} ${styles.social_list}`}><FaLinkedin /></li>
+                        </ul>
+                </div>   
+            </div>
+            <div className={styles.row}>
+                <p className={styles.copy_right}>
+                <span> &copy; {new Date().getFullYear()} ResiliCucina | All rights reserved</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+);
 }

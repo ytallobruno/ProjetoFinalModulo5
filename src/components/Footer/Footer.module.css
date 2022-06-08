@@ -1,35 +1,69 @@
 @import "../../App.css";
 
 .footer {
-  margin-top: 30px;
-  background-color: #090909;
-  color: #F7CC32;
-  padding: 2em;
-  text-align: center;
-  max-width: 100%;
+  color: var(--amarelo);
+  max-width: 100vw;
+  height: 35vh;
+  margin-top: 5em;
+  display: block;
+  background-color: rgb(22, 21, 21);
 }
 
-.social_list {
+.row {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  list-style: none;
 }
 
-.social_list li {
-  margin: 0 1em;
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.us {
   cursor: pointer;
 }
 
-.social_list li:hover {
-  color: #EDEDED;
+.item_list {
+  padding: 2px;
+  margin: 2px;
 }
 
-.social_list svg {
-  font-size: 1.5em;
+.social_list {
+font-size: 1.2em;
+padding: 0.5rem 0;
 }
 
-.copy_right {
-  margin-top: 0.7em;
+.social_list :hover {
+  cursor: pointer;
+  color: var(--cinza);
+}
+
+.social_whats {
+font-size: 1.2em;
+}
+
+.social_whats :hover {
+  color: var(--cinza);
+}
+
+@media (max-width: 900px) {
+  .item_list {
+    font-size: 11px;
+  }
+
+  .column {
+    font-size: 11px;
+  }
+
+  .social_list {
+    font-size: 11px;
+  }
+
+  .row span{
+    font-size: 11px;
+  }
 }

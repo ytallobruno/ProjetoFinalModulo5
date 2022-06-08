@@ -40,3 +40,15 @@
 body {
   background-color: var(--preto);
 }
+
+input{
+  height: 2.2rem;
+  border-radius: 10px;
+  background-color: var(--cinza);
+  border: 2px solid var(--cinzaescuro);
+  caret-color: var(--amarelo);
+}
+
+input:focus {
+  outline: 2px ridge var(--amarelo);
+}

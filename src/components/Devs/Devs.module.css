@@ -1,0 +1,141 @@
+/* //@import "../../App.css";// */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 200px;
+    }
+
+.containergeral {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 200px;
+ 
+}
+
+.txt {
+    width: 200px;
+    height: 300px;
+    color: #F7CC32;
+    background-color: #090909;
+    font-weight: italic;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: #F7CC32;
+    border: solid;
+    cursor: pointer;
+    }
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-style: 10px;
+    border-radius: 5px;
+    }
+
+.icons {
+    margin: 10px;
+    font-size: 30px;
+    cursor:pointer;
+}
+
+.icons:hover {
+    color: #E32B2B;
+}
+
+.box {
+        width: auto;
+        height: auto;
+        margin: 5px auto;
+        display: inline-block;
+        border-color: #F7CC32;
+        color: #F7CC32;
+        background-color: #090909;
+        font-weight: italic;
+        align-items: center;
+ }
+
+.flipcontainer {
+    perspective: 1000px; 
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 400px;
+    margin: 10px 20px;
+   
+  }
+
+
+.flipper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+      }
+
+.flipcontainer .flipper {
+	transition: all 0.5s;
+    transform-style: preserve-3d;
+    display:flex;
+    justify-content: center;
+    
+    }
+
+.flipcontainer:hover .flipper{
+    transform: rotateY(180deg);
+    /* se quiser uma animação na vertical,
+    troque por rotateX(180deg)
+    */
+}
+  
+.front, .back{
+	backface-visibility: hidden;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    }
+    
+.back {
+    transform: rotateY(180deg);
+
+}
+
+
+/* @media (min-width: 400px) {
+        .container {
+            width: 100%;
+            height: 500vh;
+            }
+
+        .containergeral {
+            width: 100%;
+            height: 500vh;
+            margin: 0 auto;
+            padding: auto;
+                   }
+
+              
+       .flippercontainer {
+            width: 100px;
+            height: 100px;
+           
+        
+        }
+
+     .front .back {
+         width: 100px;
+         height: 100px;
+              }
+} */

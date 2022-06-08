@@ -1,0 +1,74 @@
+@import "../../App.css";
+
+.cadastro {
+width: 100%;
+color: white;
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.cadastro h2 {
+  color: var(--cinza);
+  letter-spacing: 10px;
+}
+
+.cadastro form {
+  display: flex;
+  width: 450px;
+  max-width: 80%;
+  height: 80vh;
+  align-self: center;
+}
+
+.inputDiv {
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.inputDiv input {
+  height: 36px;
+  width: 100%;
+  min-width: 180px;
+  border-radius: 5px;
+  border: 1px solid var(--cinzaescuro);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 10px 0;
+  color: var(--cinza);
+}
+
+.inputDiv button {
+  margin-top: 10px;
+}
+
+.confirmarDiv {
+  width: 100%;
+}
+
+.confirmarDiv p {
+  font-size: 12px;
+  width: 100%;
+  margin: 0 auto;
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  .cadastro {
+    padding-top: 80px;
+  }
+
+  .inputDiv {
+    margin-top: 20px;
+  }
+
+  .confirmarDiv p {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+}

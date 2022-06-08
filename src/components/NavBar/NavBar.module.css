@@ -8,6 +8,7 @@
   margin: 0 0 1rem;
 }
 
+a,
 a:visited {
   color: var(--cinza);
 }
@@ -20,7 +21,7 @@ a:visited {
 
 .logotipo {
   cursor: pointer;
-  margin-left: 0.5rem;
+  margin-left: 0.9rem;
   width: calc(15vh - 45px);
 }
 
@@ -48,8 +49,8 @@ a:visited {
   padding: 0.4rem;
 }
 
-.listaItens li:nth-child(6) {
-  margin-right: 0.6rem;
+.listaItens li:nth-child(5) {
+  margin-right: 1rem;
 }
 
 .listaItens a {
@@ -60,18 +61,21 @@ a:visited {
   text-decoration: none;
 }
 
-.listaItens li a:hover,
-.listaItens li:hover,
+.listaItens li:hover a,
 .listaItens li:hover .loginIcone {
   color: var(--amarelo);
+}
+
+.listaItens li a:hover .loginIcone {
+  scale: 1.2;
 }
 
 .loginIcone {
   background-color: var(--preto);
   color: var(--cinza);
   background-size: cover;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   margin-right: 0.3rem;
   border-radius: 100%;
   transition: 0.3s ease-in-out;
@@ -81,16 +85,19 @@ a:visited {
   display: none;
 }
 
+.carrinhoIndicador{
+  position: relative;
+}
+
 @media (max-width: 900px) {
   .NavBar .navigation,
-  .listaItens li:nth-child(4),
-  .listaItens li:nth-child(5) {
+  .listaItens li:nth-child(4) {
     display: none;
   }
 
   .NavBar .MobileNavigation {
     width: 100%;
-    position: fixed;
+    position: relative;
     height: 8.5vh;
     display: flex;
     align-items: center;

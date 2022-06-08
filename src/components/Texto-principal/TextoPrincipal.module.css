@@ -28,6 +28,10 @@
   letter-spacing: 5px;
 }
 
+.deVerdade {
+  width: fit-content;
+}
+
 .mainText :nth-child(3) {
   letter-spacing: 3px;
   text-decoration: underline;
@@ -46,15 +50,14 @@
   min-width: 120px;
   height: 40px;
   font-size: 12px;
+  margin-right: 25px;
 }
 
 .buttonDiv button {
   border: solid 2px var(--amarelo);
 }
 
-.buttonDiv :nth-child(1) {
-  margin: 0 15px;
-}
+
 
 .videoDiv {
   margin-right: 50px;
@@ -144,9 +147,8 @@ h2 {
     display: inline-block;
   }
 
-  .mainText :nth-child(2){
-    width: 60%;
-  }
+
+  
 
   .buttonDiv {
     display: flex;
@@ -155,8 +157,11 @@ h2 {
   }
 
   .buttonDiv * {
+    margin: 0;
+    padding: 0;
     height: 40px;
     font-size: 11px;
+    max-width: 145px;
     border: solid 2px rgba(255, 255, 255, 0.582);
   }
 

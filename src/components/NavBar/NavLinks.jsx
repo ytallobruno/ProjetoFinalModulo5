@@ -5,6 +5,7 @@ import style from "./NavBar.module.css";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import Carrinho from "../Carrinho/Carrinho";
+import Indicador from "../Indicador/Indicador";
 
 export default function NavLinks(props) {
   const animateFrom = { opacity: 0, y: -30 };
@@ -44,7 +45,10 @@ export default function NavLinks(props) {
         transition={{ delay: 0.3 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Button texto="PEDIR" />
+        <div className={style.carrinhoIndicador}>
+          <Button onClick={(e) => setShowcart(true)} texto="CARRINHO" />
+          <Indicador />
+        </div>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -52,18 +56,8 @@ export default function NavLinks(props) {
         transition={{ delay: 0.4 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <Button onClick={(e) => setShowcart(true)} texto="CARRINHO" />
-      </motion.li>
-      <motion.li
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{ delay: 0.45 }}
-        onClick={() => props.isMobile && props.closeMobileMenu()}
-      >
-        <a>
-          <BsPersonCircle className={style.loginIcone} />
-          Login
-        </a>
+        <BsPersonCircle className={style.loginIcone} />
+        <Link to="/Login">Login</Link>
       </motion.li>
       <Carrinho showCart={showCart} closeCart={(e) => setShowcart(false)} />
     </ul>
