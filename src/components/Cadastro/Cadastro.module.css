@@ -1,0 +1,70 @@
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: fit-content;
+}
+
+.cadastro h2 {
+    color: white;
+    letter-spacing: 10px;
+}
+
+.cadastro form {
+    display: flex;
+    width: 100%;
+}
+
+.inputDiv{
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.inputDiv input{
+    height: 36px;
+    width: 100%;
+    min-width: 180px;
+    border-radius: 5px;
+    border: 2px solid #8f8f8fc0;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    margin: 10px 0;
+    color: white;
+}
+
+.inputDiv button{
+    margin-top: 10px;
+}
+
+.confirmarDiv{
+    width: 100%;
+}
+
+.confirmarDiv p{
+font-size: 12px;
+ width: 100%;
+ margin: 0 auto ;
+ color: red;
+}
+
+
+@media screen and (max-width: 900px){
+    .cadastro{
+        padding-top: 80px;
+    }
+
+    .inputDiv{
+        margin-top: 20px;
+    }
+
+    .confirmarDiv p{ 
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+}

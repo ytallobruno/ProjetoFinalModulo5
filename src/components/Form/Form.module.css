@@ -1,0 +1,70 @@
+@import "../../App.css";
+
+
+
+.Form {
+  background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 400px;
+  height: 500px ;
+  margin-right: 60%;
+  margin-left: 40%;
+  padding-left: 8%;
+  padding-top: 6% ;
+  margin-top: 10%;
+  margin-bottom: 70%;
+  
+  
+}
+
+ h3 {
+    color: white;
+    font-size: 15px  ;
+    text-decoration: none;
+}
+
+p {
+    color: white;  
+}
+
+.input {
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  
+}
+
+h2{
+  color: white;
+}
+
+h6{
+  color: var(--amarelo);
+
+}
+ 
+h6:hover{
+ color: var(--vermelho);
+}
+
+.button {
+ 
+ display: flex;
+ align-items: center;
+ margin-top: -3%;
+ margin-left: auto;
+ margin-right: auto ;
+ 
+
+} 
+
+.Openeye {
+  display: flex;
+  float: center;
+  margin-top: -8%;
+ margin-left: 55%;
+ cursor: pointer;
+}
