@@ -1,4 +1,4 @@
-/* //@import "../../App.css";// */
+@import "../../App.css";
 
 .container {
     width: 100%;
@@ -24,15 +24,15 @@
 .txt {
     width: 200px;
     height: 300px;
-    color: #F7CC32;
-    background-color: #090909;
+    color: var(--amarelo);
+    background-color: var(--preto);
     font-weight: italic;
     margin: 20px;
     padding: 10px;
     text-align: center;
     font-size: 15px;
     border-radius: 10px;
-    border-color: #F7CC32;
+    border-color:var(--amarelo);
     border: solid;
     cursor: pointer;
     }
@@ -51,7 +51,7 @@
 }
 
 .icons:hover {
-    color: #E32B2B;
+    color: var(--vermelho);
 }
 
 .box {
@@ -113,29 +113,69 @@
 }
 
 
-/* @media (min-width: 400px) {
-        .container {
-            width: 100%;
-            height: 500vh;
-            }
+@media (max-width: 899px) {
 
-        .containergeral {
-            width: 100%;
-            height: 500vh;
-            margin: 0 auto;
-            padding: auto;
-                   }
-
-              
-       .flippercontainer {
-            width: 100px;
-            height: 100px;
-           
-        
+    .container {
+        width: 100vh;
+        height: 100vw;
+        flex-direction: column;
+        justify-content: center;
         }
 
-     .front .back {
-         width: 100px;
-         height: 100px;
-              }
-} */
+    .containergeral {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+                
+    }
+    
+    .txt {
+        width: 80%;
+        height: 15%;
+        font-size: auto;
+        }
+    
+    .img {
+        width: 80%;
+        height: 15%;
+        }
+    
+    .icons {
+       font-size: 10px;
+        
+    }
+
+    .box {
+        width: 80%;
+        height: 5%;
+       }
+
+    .flipcontainer {
+        perspective: 1000px; 
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+        margin-top: 10%;          
+        }
+        
+        
+    .flipper {
+        
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        
+        }
+        
+    .front, .back{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+} 
