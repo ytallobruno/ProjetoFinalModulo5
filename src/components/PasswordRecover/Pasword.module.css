@@ -7,8 +7,8 @@ form {
     align-items: center;
     width: 20vw;
     min-width: 350px;
-    height: 50vh;
-    min-height: 400px;
+    height: 100%;
+    min-height: 300px;
     border-radius: 10px;
     border: 2px solid var(--cinzamedio);
     padding: 1rem;
