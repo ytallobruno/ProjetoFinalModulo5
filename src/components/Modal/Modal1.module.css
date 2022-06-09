@@ -1,51 +1,48 @@
 @import "../../App.css";
 
 .modal {
-    width: 100%;
+    width: 50%;
     height: 100vh;
     position: absolute;
-    top:0;
-    left: 0px;
+    top: 48px;
+    left: 29px;
     z-index: 10;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     }
+
+.modal1 {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 48px;
+    left: 600px;
+    z-index: 10;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+        }
+
+
 .container {
         display:flex;
-        background-color:rgba(0,0,0,0.8);
-        backdrop-filter: blur(10px);
+        background-color: var(--preto);
         color:var(--amarelo);
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 90%;
         border-radius: 20px;
-         }
+       }
+
 .txt {
-    width: 50%;
+    width: 100%;
     font-weight: italic;
-    margin: 15px;
+    padding: 20px;
     display:inline-block;
-    text-align: start;
-    margin-top: 20px;
+    align-items: center;
+    text-align: justify;
+    margin-top: 80px;
     font-size: large;
-    }
-
-.txt1 {
-     width: 50%;
-     font-weight: italic;
-     margin: 15px;
-     display:inline-block;
-    text-align: center;
-    margin-top: 60px;
-     font-size: large;
-    }
-
-.input {
-    border-radius: 5px;
-    background-color: #EDEDED;
-    opacity: 0.8;
-    color:var(--preto);
-    width: 50%;
     }
 
 .close {
@@ -78,48 +75,15 @@
         background-color: #090909;
         transform: rotate(-45deg);
         }    
-.img {
-    width: 350px;
-    height: 350px;
-    border-style: 10px;
-    border-radius: 5px;
-    margin-right: 15px;
-    margin-left: 30px;
-    margin-top: 60px;
-}
-
-.link {
-    display:inline-block;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin: 30px;
-    cursor: pointer;
-    }
-
-.link:hover{
-    width: 90px;
-    height: 90px;
-    -webkit-transform:rotateY(0);
-    -moz-transform:rotateY(0);
-    transform:rotateY(0)
-}
 
 .box {
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    margin: 5px;
     display: inline-block;
-    left: 20px;
       }
 
-.form {
-    width: 50%;
-    height: 80%;
-    display: inline-block;
-}
-
-
-      @media (max-width: 800px) {
+@media (max-width: 800px) {
         .modal {
             width: 90%;
             height: 150%;
@@ -127,9 +91,18 @@
             left: 0;
             position: absolute;
         }
+        
+        .modal1 {
+            width: 90%;
+            height: 150%;
+            top: 80px;
+            left: 0;
+            position: absolute;
+        }
+
         .container {
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
         }
 
         .box {
@@ -137,17 +110,10 @@
             font-size: medium;
                           }
 
-    .form {
-        height: 100%;
-        font-size: medium;
-    }
-        
-
-        .img {
-            display: none;
-        }
         .txt {
             font-size: 15px;
+            width: auto;
+            height: auto;
         }
         
     }
