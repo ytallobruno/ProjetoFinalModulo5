@@ -15,7 +15,7 @@ export default function FaleConosco ({ onClose = ()=>{}}) {
                     <br/>
                     Estou a disposição para te ouvir.
                 </p>
-                <form>
+                <form className={styles.form}>
                     <label className={styles.txt}>Nome Completo:</label>
                     <br/>
                     <input  className={styles.input} type="name" />

@@ -11,7 +11,8 @@ export default function SejaCucina ({ onClose = ()=>{}}) {
                 <span className={styles.box}>  
                <p className={styles.txt1}><strong>Venha fazer parte da Família Resili Cucina!</strong></p>
                <br/>
-               <label className={styles.txt1}>Selecione o setor que deseja se candidatar:</label>
+               <form className={styles.form}>
+                    <label className={styles.txt1}>Selecione o setor que deseja se candidatar:</label>
                <br/>
                <select>
                     <option value="Administrativo">Administrativo</option>
@@ -24,6 +25,7 @@ export default function SejaCucina ({ onClose = ()=>{}}) {
                <br/>
                <br/>
                <button type='submit'>Salvar</button>
+               </form>
          </span>
     </div>
 
