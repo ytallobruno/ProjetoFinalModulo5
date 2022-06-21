@@ -1,3 +1,5 @@
+import pizza from '../../assets/images/Pizza.png'
+import video from '../../assets/images/main-video.mp4'
 import motoboy from '../../assets/images/motoboy.png'
 import style from "./TextoPrincipal.module.css"
 import Button from '../Button/Button'
@@ -41,9 +43,10 @@ export default function TextoPrincipal () {
                 </div>
 
             <div className="style.videoDiv">
-                <div className={style.videoContainer}  autoPlay="autoplay" loop='loop' muted="muted">
-                <img src="https://media1.giphy.com/media/4ayiIWaq2VULC/giphy.gif?cid=790b7611e1ef4c5d510821b2427ecea7ad3606bd27df4152&rid=giphy.gif&ct=g" className={style.pizzaFrame} frameBorder="0"></img>
-                </div>
+                <video className={style.videoContainer}  autoPlay="autoplay" loop='loop' muted="muted">
+                <source type="video/mp4" autoPlay src={video}/>
+                    Video não compatível no seu navegador
+                </video>
             </div>
     </div>
     <div className={style.motoboy}>
