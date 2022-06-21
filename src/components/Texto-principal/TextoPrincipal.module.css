@@ -60,7 +60,6 @@
 
 
 .videoDiv {
-  margin-right: 50px;
   object-fit: cover;
   max-height: fit-content;
 }

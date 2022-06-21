@@ -75,6 +75,7 @@ export default function Password () {
 
     return (
         <div>
+        <div className={style.formDiv}>
             <NavBar />
             <form>
                 <h1>Esqueceu a senha?</h1>
@@ -103,6 +104,8 @@ export default function Password () {
                 }}
                 texto='Verificar e-mail'/>
             </form>
+        </div>
+        <Footer />
         </div>
     )
 }
